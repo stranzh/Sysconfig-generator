@@ -54,4 +54,25 @@ try:
 except Exception as e:
     print(f"   Warning LOLBAS: {e}")
 
+# 3. Compile src/data_bundle.js directly for zero-latency browser loading
+print("3. Compiling src/data_bundle.js...")
+try:
+    with open("src/data/software_catalog.json") as f:
+        software = json.load(f)
+    with open("src/data/sysmon_modular_manifest.json") as f:
+        modular = json.load(f)
+    
+    bundle_data = {
+        "lolol_projects": lolol_projects,
+        "lolbas": parsed_lolbas,
+        "software_catalog": software,
+        "sysmon_modular_manifest": modular,
+        "build_timestamp": "auto-generated"
+    }
+    with open("src/data_bundle.js", "w") as f:
+        f.write("window.SYSMON_DATA_BUNDLE = " + json.dumps(bundle_data) + ";\n")
+    print(f"   Done: Compiled src/data_bundle.js ({len(open('src/data_bundle.js').read())} bytes).")
+except Exception as e:
+    print(f"   Warning data bundle generation: {e}")
+
 print("Datasets build completed successfully.")

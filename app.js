@@ -421,8 +421,12 @@
 
   function processScanReport(report) {
     scanResultsContainer.style.display = "block";
-    const appList = report.installed_software || [];
-    const procList = report.running_processes || [];
+    const appList = Array.isArray(report.installed_software) 
+      ? report.installed_software 
+      : (report.installed_software ? [report.installed_software] : []);
+    const procList = Array.isArray(report.running_processes) 
+      ? report.running_processes 
+      : (report.running_processes ? [report.running_processes] : []);
     const detectedSoftware = [];
 
     // Match against catalog
