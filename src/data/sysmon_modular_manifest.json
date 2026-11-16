@@ -1,0 +1,2571 @@
+{
+  "0_custom_configuration": [],
+  "1_process_creation": [
+    {
+      "name": "exclude_adobe_acrobat.xml",
+      "path": "1_process_creation/exclude_adobe_acrobat.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_adobe_acrobat.xml",
+      "size": 1177
+    },
+    {
+      "name": "exclude_adobe_creative_cloud.xml",
+      "path": "1_process_creation/exclude_adobe_creative_cloud.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_adobe_creative_cloud.xml",
+      "size": 692
+    },
+    {
+      "name": "exclude_adobe_flash.xml",
+      "path": "1_process_creation/exclude_adobe_flash.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_adobe_flash.xml",
+      "size": 382
+    },
+    {
+      "name": "exclude_adobe_supporting_processes.xml",
+      "path": "1_process_creation/exclude_adobe_supporting_processes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_adobe_supporting_processes.xml",
+      "size": 1798
+    },
+    {
+      "name": "exclude_azure_sentinel_agent.xml",
+      "path": "1_process_creation/exclude_azure_sentinel_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_azure_sentinel_agent.xml",
+      "size": 692
+    },
+    {
+      "name": "exclude_cisco_anyconnect.xml",
+      "path": "1_process_creation/exclude_cisco_anyconnect.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_cisco_anyconnect.xml",
+      "size": 349
+    },
+    {
+      "name": "exclude_desktop_central.xml",
+      "path": "1_process_creation/exclude_desktop_central.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_desktop_central.xml",
+      "size": 386
+    },
+    {
+      "name": "exclude_dotnet-3-or-4.xml",
+      "path": "1_process_creation/exclude_dotnet-3-or-4.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_dotnet-3-or-4.xml",
+      "size": 1722
+    },
+    {
+      "name": "exclude_drivers.xml",
+      "path": "1_process_creation/exclude_drivers.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_drivers.xml",
+      "size": 580
+    },
+    {
+      "name": "exclude_dropbox.xml",
+      "path": "1_process_creation/exclude_dropbox.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_dropbox.xml",
+      "size": 460
+    },
+    {
+      "name": "exclude_eset.xml",
+      "path": "1_process_creation/exclude_eset.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_eset.xml",
+      "size": 330
+    },
+    {
+      "name": "exclude_google_chrome.xml",
+      "path": "1_process_creation/exclude_google_chrome.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_google_chrome.xml",
+      "size": 792
+    },
+    {
+      "name": "exclude_ivanti_res.xml",
+      "path": "1_process_creation/exclude_ivanti_res.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_ivanti_res.xml",
+      "size": 858
+    },
+    {
+      "name": "exclude_malwarebytes.xml",
+      "path": "1_process_creation/exclude_malwarebytes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_malwarebytes.xml",
+      "size": 581
+    },
+    {
+      "name": "exclude_microsoft_office_click2run.xml",
+      "path": "1_process_creation/exclude_microsoft_office_click2run.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_microsoft_office_click2run.xml",
+      "size": 707
+    },
+    {
+      "name": "exclude_microsoft_office_services.xml",
+      "path": "1_process_creation/exclude_microsoft_office_services.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_microsoft_office_services.xml",
+      "size": 513
+    },
+    {
+      "name": "exclude_mozilla_firefox.xml",
+      "path": "1_process_creation/exclude_mozilla_firefox.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_mozilla_firefox.xml",
+      "size": 600
+    },
+    {
+      "name": "exclude_onedrive.xml",
+      "path": "1_process_creation/exclude_onedrive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_onedrive.xml",
+      "size": 302
+    },
+    {
+      "name": "exclude_sophos.xml",
+      "path": "1_process_creation/exclude_sophos.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_sophos.xml",
+      "size": 1170
+    },
+    {
+      "name": "exclude_splunk.xml",
+      "path": "1_process_creation/exclude_splunk.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_splunk.xml",
+      "size": 848
+    },
+    {
+      "name": "exclude_splunk_universal_forwarder.xml",
+      "path": "1_process_creation/exclude_splunk_universal_forwarder.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_splunk_universal_forwarder.xml",
+      "size": 1076
+    },
+    {
+      "name": "exclude_svchost.xml",
+      "path": "1_process_creation/exclude_svchost.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_svchost.xml",
+      "size": 9633
+    },
+    {
+      "name": "exclude_trend_micro.xml",
+      "path": "1_process_creation/exclude_trend_micro.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_trend_micro.xml",
+      "size": 1399
+    },
+    {
+      "name": "exclude_windows_defender.xml",
+      "path": "1_process_creation/exclude_windows_defender.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_windows_defender.xml",
+      "size": 746
+    },
+    {
+      "name": "exclude_windows_generic_processes.xml",
+      "path": "1_process_creation/exclude_windows_generic_processes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/exclude_windows_generic_processes.xml",
+      "size": 2317
+    },
+    {
+      "name": "include_accessibility_features.xml",
+      "path": "1_process_creation/include_accessibility_features.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_accessibility_features.xml",
+      "size": 1135
+    },
+    {
+      "name": "include_ai_agent_execution.xml",
+      "path": "1_process_creation/include_ai_agent_execution.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_ai_agent_execution.xml",
+      "size": 5228
+    },
+    {
+      "name": "include_all.xml",
+      "path": "1_process_creation/include_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_all.xml",
+      "size": 338
+    },
+    {
+      "name": "include_appc_shim.xml",
+      "path": "1_process_creation/include_appc_shim.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_appc_shim.xml",
+      "size": 340
+    },
+    {
+      "name": "include_bitsadmin.xml",
+      "path": "1_process_creation/include_bitsadmin.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_bitsadmin.xml",
+      "size": 336
+    },
+    {
+      "name": "include_bypass_uac.xml",
+      "path": "1_process_creation/include_bypass_uac.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_bypass_uac.xml",
+      "size": 710
+    },
+    {
+      "name": "include_chrome_edge_extension_sideloading.xml",
+      "path": "1_process_creation/include_chrome_edge_extension_sideloading.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_chrome_edge_extension_sideloading.xml",
+      "size": 792
+    },
+    {
+      "name": "include_clear_windows_event_logs.xml",
+      "path": "1_process_creation/include_clear_windows_event_logs.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_clear_windows_event_logs.xml",
+      "size": 1017
+    },
+    {
+      "name": "include_dcom_lateral_movement.xml",
+      "path": "1_process_creation/include_dcom_lateral_movement.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_dcom_lateral_movement.xml",
+      "size": 494
+    },
+    {
+      "name": "include_disable_windows_auditing.xml",
+      "path": "1_process_creation/include_disable_windows_auditing.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_disable_windows_auditing.xml",
+      "size": 1217
+    },
+    {
+      "name": "include_disabling_windows_defender.xml",
+      "path": "1_process_creation/include_disabling_windows_defender.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_disabling_windows_defender.xml",
+      "size": 760
+    },
+    {
+      "name": "include_dosfuscation.xml",
+      "path": "1_process_creation/include_dosfuscation.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_dosfuscation.xml",
+      "size": 643
+    },
+    {
+      "name": "include_explorer.xml",
+      "path": "1_process_creation/include_explorer.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_explorer.xml",
+      "size": 473
+    },
+    {
+      "name": "include_firewall_disable_commands.xml",
+      "path": "1_process_creation/include_firewall_disable_commands.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_firewall_disable_commands.xml",
+      "size": 889
+    },
+    {
+      "name": "include_fltmc.xml",
+      "path": "1_process_creation/include_fltmc.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_fltmc.xml",
+      "size": 881
+    },
+    {
+      "name": "include_group_membership_changes.xml",
+      "path": "1_process_creation/include_group_membership_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_group_membership_changes.xml",
+      "size": 851
+    },
+    {
+      "name": "include_installutil.xml",
+      "path": "1_process_creation/include_installutil.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_installutil.xml",
+      "size": 559
+    },
+    {
+      "name": "include_living_off_the_land.xml",
+      "path": "1_process_creation/include_living_off_the_land.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_living_off_the_land.xml",
+      "size": 34944
+    },
+    {
+      "name": "include_local_account_creation.xml",
+      "path": "1_process_creation/include_local_account_creation.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_local_account_creation.xml",
+      "size": 793
+    },
+    {
+      "name": "include_lsass_comsvcs_dump.xml",
+      "path": "1_process_creation/include_lsass_comsvcs_dump.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_lsass_comsvcs_dump.xml",
+      "size": 513
+    },
+    {
+      "name": "include_mavinject.xml",
+      "path": "1_process_creation/include_mavinject.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_mavinject.xml",
+      "size": 599
+    },
+    {
+      "name": "include_microsoft_cmstp.xml",
+      "path": "1_process_creation/include_microsoft_cmstp.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_microsoft_cmstp.xml",
+      "size": 572
+    },
+    {
+      "name": "include_msbuild.xml",
+      "path": "1_process_creation/include_msbuild.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_msbuild.xml",
+      "size": 368
+    },
+    {
+      "name": "include_msoffice.xml",
+      "path": "1_process_creation/include_msoffice.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_msoffice.xml",
+      "size": 962
+    },
+    {
+      "name": "include_registry_hive_dump.xml",
+      "path": "1_process_creation/include_registry_hive_dump.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_registry_hive_dump.xml",
+      "size": 1323
+    },
+    {
+      "name": "include_regsvcs_regasm.xml",
+      "path": "1_process_creation/include_regsvcs_regasm.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_regsvcs_regasm.xml",
+      "size": 355
+    },
+    {
+      "name": "include_scheduled_task_creation.xml",
+      "path": "1_process_creation/include_scheduled_task_creation.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_scheduled_task_creation.xml",
+      "size": 559
+    },
+    {
+      "name": "include_service_installation.xml",
+      "path": "1_process_creation/include_service_installation.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_service_installation.xml",
+      "size": 714
+    },
+    {
+      "name": "include_shells.xml",
+      "path": "1_process_creation/include_shells.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_shells.xml",
+      "size": 1148
+    },
+    {
+      "name": "include_suspicious_atbroker.xml",
+      "path": "1_process_creation/include_suspicious_atbroker.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_suspicious_atbroker.xml",
+      "size": 487
+    },
+    {
+      "name": "include_suspicious_powershell.xml",
+      "path": "1_process_creation/include_suspicious_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_suspicious_powershell.xml",
+      "size": 1271
+    },
+    {
+      "name": "include_syncappvpublishingserver.xml",
+      "path": "1_process_creation/include_syncappvpublishingserver.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_syncappvpublishingserver.xml",
+      "size": 352
+    },
+    {
+      "name": "include_sysinternals.xml",
+      "path": "1_process_creation/include_sysinternals.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_sysinternals.xml",
+      "size": 3994
+    },
+    {
+      "name": "include_sysmon_configuration_changes.xml",
+      "path": "1_process_creation/include_sysmon_configuration_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_sysmon_configuration_changes.xml",
+      "size": 463
+    },
+    {
+      "name": "include_system_recovery.xml",
+      "path": "1_process_creation/include_system_recovery.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_system_recovery.xml",
+      "size": 2225
+    },
+    {
+      "name": "include_uncommon_locations.xml",
+      "path": "1_process_creation/include_uncommon_locations.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_uncommon_locations.xml",
+      "size": 2683
+    },
+    {
+      "name": "include_vscode_extension_management.xml",
+      "path": "1_process_creation/include_vscode_extension_management.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_vscode_extension_management.xml",
+      "size": 868
+    },
+    {
+      "name": "include_windows_control_panel.xml",
+      "path": "1_process_creation/include_windows_control_panel.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_windows_control_panel.xml",
+      "size": 575
+    },
+    {
+      "name": "include_windows_defender_tampering.xml",
+      "path": "1_process_creation/include_windows_defender_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_windows_defender_tampering.xml",
+      "size": 798
+    },
+    {
+      "name": "include_windows_remote_management.xml",
+      "path": "1_process_creation/include_windows_remote_management.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_windows_remote_management.xml",
+      "size": 616
+    },
+    {
+      "name": "include_wsl.xml",
+      "path": "1_process_creation/include_wsl.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/1_process_creation/include_wsl.xml",
+      "size": 2299
+    }
+  ],
+  "2_file_create_time": [
+    {
+      "name": "exclude_chrome.xml",
+      "path": "2_file_create_time/exclude_chrome.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_chrome.xml",
+      "size": 479
+    },
+    {
+      "name": "exclude_nvidia.xml",
+      "path": "2_file_create_time/exclude_nvidia.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_nvidia.xml",
+      "size": 418
+    },
+    {
+      "name": "exclude_onedrive.xml",
+      "path": "2_file_create_time/exclude_onedrive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_onedrive.xml",
+      "size": 318
+    },
+    {
+      "name": "exclude_setups.xml",
+      "path": "2_file_create_time/exclude_setups.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_setups.xml",
+      "size": 289
+    },
+    {
+      "name": "exclude_slack.xml",
+      "path": "2_file_create_time/exclude_slack.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_slack.xml",
+      "size": 303
+    },
+    {
+      "name": "exclude_teams.xml",
+      "path": "2_file_create_time/exclude_teams.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/exclude_teams.xml",
+      "size": 341
+    },
+    {
+      "name": "include_executables.xml",
+      "path": "2_file_create_time/include_executables.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/include_executables.xml",
+      "size": 398
+    },
+    {
+      "name": "include_temp_folder.xml",
+      "path": "2_file_create_time/include_temp_folder.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/include_temp_folder.xml",
+      "size": 601
+    },
+    {
+      "name": "include_users_folder.xml",
+      "path": "2_file_create_time/include_users_folder.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/include_users_folder.xml",
+      "size": 372
+    },
+    {
+      "name": "include_volume_shadow_copy.xml",
+      "path": "2_file_create_time/include_volume_shadow_copy.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/2_file_create_time/include_volume_shadow_copy.xml",
+      "size": 488
+    }
+  ],
+  "3_network_connection_initiated": [
+    {
+      "name": "exclude_dropbox.xml",
+      "path": "3_network_connection_initiated/exclude_dropbox.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_dropbox.xml",
+      "size": 317
+    },
+    {
+      "name": "exclude_elastic.xml",
+      "path": "3_network_connection_initiated/exclude_elastic.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_elastic.xml",
+      "size": 344
+    },
+    {
+      "name": "exclude_eset.xml",
+      "path": "3_network_connection_initiated/exclude_eset.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_eset.xml",
+      "size": 332
+    },
+    {
+      "name": "exclude_lsass_kerberos.xml",
+      "path": "3_network_connection_initiated/exclude_lsass_kerberos.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_lsass_kerberos.xml",
+      "size": 434
+    },
+    {
+      "name": "exclude_microsoft_onedrive.xml",
+      "path": "3_network_connection_initiated/exclude_microsoft_onedrive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_microsoft_onedrive.xml",
+      "size": 375
+    },
+    {
+      "name": "exclude_owncloud.xml",
+      "path": "3_network_connection_initiated/exclude_owncloud.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_owncloud.xml",
+      "size": 332
+    },
+    {
+      "name": "exclude_palo_alto_cortex.xml",
+      "path": "3_network_connection_initiated/exclude_palo_alto_cortex.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_palo_alto_cortex.xml",
+      "size": 326
+    },
+    {
+      "name": "exclude_rdp_over_udp.xml",
+      "path": "3_network_connection_initiated/exclude_rdp_over_udp.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_rdp_over_udp.xml",
+      "size": 391
+    },
+    {
+      "name": "exclude_sophos.xml",
+      "path": "3_network_connection_initiated/exclude_sophos.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_sophos.xml",
+      "size": 1054
+    },
+    {
+      "name": "exclude_spotify.xml",
+      "path": "3_network_connection_initiated/exclude_spotify.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_spotify.xml",
+      "size": 313
+    },
+    {
+      "name": "exclude_synology_drive.xml",
+      "path": "3_network_connection_initiated/exclude_synology_drive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_synology_drive.xml",
+      "size": 545
+    },
+    {
+      "name": "exclude_trend_micro.xml",
+      "path": "3_network_connection_initiated/exclude_trend_micro.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_trend_micro.xml",
+      "size": 464
+    },
+    {
+      "name": "exclude_windows_update.xml",
+      "path": "3_network_connection_initiated/exclude_windows_update.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/exclude_windows_update.xml",
+      "size": 1247
+    },
+    {
+      "name": "include_3rd_party_remote_management.xml",
+      "path": "3_network_connection_initiated/include_3rd_party_remote_management.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_3rd_party_remote_management.xml",
+      "size": 866
+    },
+    {
+      "name": "include_bitsadmin.xml",
+      "path": "3_network_connection_initiated/include_bitsadmin.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_bitsadmin.xml",
+      "size": 319
+    },
+    {
+      "name": "include_common_callback_ports.xml",
+      "path": "3_network_connection_initiated/include_common_callback_ports.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_common_callback_ports.xml",
+      "size": 1022
+    },
+    {
+      "name": "include_hp_critical_services.xml",
+      "path": "3_network_connection_initiated/include_hp_critical_services.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_hp_critical_services.xml",
+      "size": 766
+    },
+    {
+      "name": "include_hybrid_connection_manager.xml",
+      "path": "3_network_connection_initiated/include_hybrid_connection_manager.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_hybrid_connection_manager.xml",
+      "size": 424
+    },
+    {
+      "name": "include_living_off_the_land.xml",
+      "path": "3_network_connection_initiated/include_living_off_the_land.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_living_off_the_land.xml",
+      "size": 10179
+    },
+    {
+      "name": "include_mavinject.xml",
+      "path": "3_network_connection_initiated/include_mavinject.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_mavinject.xml",
+      "size": 330
+    },
+    {
+      "name": "include_native_windows_tools.xml",
+      "path": "3_network_connection_initiated/include_native_windows_tools.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_native_windows_tools.xml",
+      "size": 6743
+    },
+    {
+      "name": "include_outbound_smb_connections.xml",
+      "path": "3_network_connection_initiated/include_outbound_smb_connections.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_outbound_smb_connections.xml",
+      "size": 492
+    },
+    {
+      "name": "include_ports_proxies.xml",
+      "path": "3_network_connection_initiated/include_ports_proxies.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_ports_proxies.xml",
+      "size": 723
+    },
+    {
+      "name": "include_ports_suspicious.xml",
+      "path": "3_network_connection_initiated/include_ports_suspicious.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_ports_suspicious.xml",
+      "size": 1947
+    },
+    {
+      "name": "include_psexec.xml",
+      "path": "3_network_connection_initiated/include_psexec.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_psexec.xml",
+      "size": 578
+    },
+    {
+      "name": "include_relaying.xml",
+      "path": "3_network_connection_initiated/include_relaying.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_relaying.xml",
+      "size": 595
+    },
+    {
+      "name": "include_suspicious_sources.xml",
+      "path": "3_network_connection_initiated/include_suspicious_sources.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_suspicious_sources.xml",
+      "size": 3574
+    },
+    {
+      "name": "include_syncappvpublishingserver.xml",
+      "path": "3_network_connection_initiated/include_syncappvpublishingserver.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_syncappvpublishingserver.xml",
+      "size": 345
+    },
+    {
+      "name": "include_tor.xml",
+      "path": "3_network_connection_initiated/include_tor.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_tor.xml",
+      "size": 1311
+    },
+    {
+      "name": "include_windows_remote_management.xml",
+      "path": "3_network_connection_initiated/include_windows_remote_management.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/3_network_connection_initiated/include_windows_remote_management.xml",
+      "size": 482
+    }
+  ],
+  "5_process_ended": [
+    {
+      "name": "include_security_process_termination.xml",
+      "path": "5_process_ended/include_security_process_termination.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/5_process_ended/include_security_process_termination.xml",
+      "size": 651
+    },
+    {
+      "name": "include_users_and_temp_folders.xml",
+      "path": "5_process_ended/include_users_and_temp_folders.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/5_process_ended/include_users_and_temp_folders.xml",
+      "size": 510
+    }
+  ],
+  "6_driver_loaded_into_kernel": [
+    {
+      "name": "exclude_intel_drivers.xml",
+      "path": "6_driver_loaded_into_kernel/exclude_intel_drivers.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/6_driver_loaded_into_kernel/exclude_intel_drivers.xml",
+      "size": 445
+    },
+    {
+      "name": "exclude_microsoft_drivers.xml",
+      "path": "6_driver_loaded_into_kernel/exclude_microsoft_drivers.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/6_driver_loaded_into_kernel/exclude_microsoft_drivers.xml",
+      "size": 739
+    }
+  ],
+  "7_image_load": [
+    {
+      "name": "exclude_cscript_scrobj.xml",
+      "path": "7_image_load/exclude_cscript_scrobj.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/exclude_cscript_scrobj.xml",
+      "size": 391
+    },
+    {
+      "name": "exclude_dotnet_load_powershell.xml",
+      "path": "7_image_load/exclude_dotnet_load_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/exclude_dotnet_load_powershell.xml",
+      "size": 786
+    },
+    {
+      "name": "exclude_office_vsto_plugins.xml",
+      "path": "7_image_load/exclude_office_vsto_plugins.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/exclude_office_vsto_plugins.xml",
+      "size": 449
+    },
+    {
+      "name": "exclude_onedrive.xml",
+      "path": "7_image_load/exclude_onedrive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/exclude_onedrive.xml",
+      "size": 2237
+    },
+    {
+      "name": "exclude_very_verbose.xml",
+      "path": "7_image_load/exclude_very_verbose.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/exclude_very_verbose.xml",
+      "size": 1166
+    },
+    {
+      "name": "include_amsi_loaded_not_powershell.xml",
+      "path": "7_image_load/include_amsi_loaded_not_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_amsi_loaded_not_powershell.xml",
+      "size": 426
+    },
+    {
+      "name": "include_bginfo_abuse.xml",
+      "path": "7_image_load/include_bginfo_abuse.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_bginfo_abuse.xml",
+      "size": 495
+    },
+    {
+      "name": "include_bitsproxy.xml",
+      "path": "7_image_load/include_bitsproxy.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_bitsproxy.xml",
+      "size": 315
+    },
+    {
+      "name": "include_dotnet_load.xml",
+      "path": "7_image_load/include_dotnet_load.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_dotnet_load.xml",
+      "size": 2158
+    },
+    {
+      "name": "include_general_warning.xml",
+      "path": "7_image_load/include_general_warning.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_general_warning.xml",
+      "size": 292
+    },
+    {
+      "name": "include_living_off_the_land.xml",
+      "path": "7_image_load/include_living_off_the_land.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_living_off_the_land.xml",
+      "size": 369
+    },
+    {
+      "name": "include_macros.xml",
+      "path": "7_image_load/include_macros.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_macros.xml",
+      "size": 518
+    },
+    {
+      "name": "include_minidumpwritedump.xml",
+      "path": "7_image_load/include_minidumpwritedump.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_minidumpwritedump.xml",
+      "size": 484
+    },
+    {
+      "name": "include_mshta_amsi_bypass.xml",
+      "path": "7_image_load/include_mshta_amsi_bypass.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_mshta_amsi_bypass.xml",
+      "size": 916
+    },
+    {
+      "name": "include_office_addins.xml",
+      "path": "7_image_load/include_office_addins.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_addins.xml",
+      "size": 452
+    },
+    {
+      "name": "include_office_com_load.xml",
+      "path": "7_image_load/include_office_com_load.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_com_load.xml",
+      "size": 1177
+    },
+    {
+      "name": "include_office_dotnet_load.xml",
+      "path": "7_image_load/include_office_dotnet_load.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_dotnet_load.xml",
+      "size": 1184
+    },
+    {
+      "name": "include_office_vb_load.xml",
+      "path": "7_image_load/include_office_vb_load.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_vb_load.xml",
+      "size": 1507
+    },
+    {
+      "name": "include_office_vsto_plugins.xml",
+      "path": "7_image_load/include_office_vsto_plugins.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_vsto_plugins.xml",
+      "size": 324
+    },
+    {
+      "name": "include_office_wmi_load.xml",
+      "path": "7_image_load/include_office_wmi_load.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_office_wmi_load.xml",
+      "size": 625
+    },
+    {
+      "name": "include_powershell.xml",
+      "path": "7_image_load/include_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_powershell.xml",
+      "size": 1211
+    },
+    {
+      "name": "include_printer_drivers.xml",
+      "path": "7_image_load/include_printer_drivers.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_printer_drivers.xml",
+      "size": 418
+    },
+    {
+      "name": "include_regsvc.xml",
+      "path": "7_image_load/include_regsvc.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_regsvc.xml",
+      "size": 321
+    },
+    {
+      "name": "include_rundll32_minidump.xml",
+      "path": "7_image_load/include_rundll32_minidump.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_rundll32_minidump.xml",
+      "size": 435
+    },
+    {
+      "name": "include_scheduledtask.xml",
+      "path": "7_image_load/include_scheduledtask.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_scheduledtask.xml",
+      "size": 327
+    },
+    {
+      "name": "include_squiblydoo.xml",
+      "path": "7_image_load/include_squiblydoo.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_squiblydoo.xml",
+      "size": 439
+    },
+    {
+      "name": "include_suspicious_location.xml",
+      "path": "7_image_load/include_suspicious_location.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_suspicious_location.xml",
+      "size": 2822
+    },
+    {
+      "name": "include_urlmonitor.xml",
+      "path": "7_image_load/include_urlmonitor.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_urlmonitor.xml",
+      "size": 317
+    },
+    {
+      "name": "include_wmi.xml",
+      "path": "7_image_load/include_wmi.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/7_image_load/include_wmi.xml",
+      "size": 339
+    }
+  ],
+  "8_create_remote_thread": [
+    {
+      "name": "exclude_generic_windows_processes.xml",
+      "path": "8_create_remote_thread/exclude_generic_windows_processes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/8_create_remote_thread/exclude_generic_windows_processes.xml",
+      "size": 1063
+    },
+    {
+      "name": "exclude_google_chrome.xml",
+      "path": "8_create_remote_thread/exclude_google_chrome.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/8_create_remote_thread/exclude_google_chrome.xml",
+      "size": 478
+    },
+    {
+      "name": "exclude_wmi.xml",
+      "path": "8_create_remote_thread/exclude_wmi.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/8_create_remote_thread/exclude_wmi.xml",
+      "size": 473
+    },
+    {
+      "name": "include_all.xml",
+      "path": "8_create_remote_thread/include_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/8_create_remote_thread/include_all.xml",
+      "size": 445
+    }
+  ],
+  "9_raw_access_read": [
+    {
+      "name": "include_general_commment.xml",
+      "path": "9_raw_access_read/include_general_commment.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/9_raw_access_read/include_general_commment.xml",
+      "size": 665
+    }
+  ],
+  "10_process_access": [
+    {
+      "name": "exclude_adobe.xml",
+      "path": "10_process_access/exclude_adobe.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_adobe.xml",
+      "size": 902
+    },
+    {
+      "name": "exclude_autodesk_app.xml",
+      "path": "10_process_access/exclude_autodesk_app.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_autodesk_app.xml",
+      "size": 457
+    },
+    {
+      "name": "exclude_azure_monitor.xml",
+      "path": "10_process_access/exclude_azure_monitor.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_azure_monitor.xml",
+      "size": 723
+    },
+    {
+      "name": "exclude_carbon_black_response.xml",
+      "path": "10_process_access/exclude_carbon_black_response.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_carbon_black_response.xml",
+      "size": 337
+    },
+    {
+      "name": "exclude_chrome_sw_reporter.xml",
+      "path": "10_process_access/exclude_chrome_sw_reporter.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_chrome_sw_reporter.xml",
+      "size": 1232
+    },
+    {
+      "name": "exclude_chrome_sw_reporter_all.xml",
+      "path": "10_process_access/exclude_chrome_sw_reporter_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_chrome_sw_reporter_all.xml",
+      "size": 744
+    },
+    {
+      "name": "exclude_cisco_amp.xml",
+      "path": "10_process_access/exclude_cisco_amp.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_cisco_amp.xml",
+      "size": 322
+    },
+    {
+      "name": "exclude_citrix.xml",
+      "path": "10_process_access/exclude_citrix.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_citrix.xml",
+      "size": 460
+    },
+    {
+      "name": "exclude_couchbase_sigar.xml",
+      "path": "10_process_access/exclude_couchbase_sigar.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_couchbase_sigar.xml",
+      "size": 321
+    },
+    {
+      "name": "exclude_elastic.xml",
+      "path": "10_process_access/exclude_elastic.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_elastic.xml",
+      "size": 333
+    },
+    {
+      "name": "exclude_fireeye_agent.xml",
+      "path": "10_process_access/exclude_fireeye_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_fireeye_agent.xml",
+      "size": 350
+    },
+    {
+      "name": "exclude_ivanti.xml",
+      "path": "10_process_access/exclude_ivanti.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_ivanti.xml",
+      "size": 642
+    },
+    {
+      "name": "exclude_lsass_noise.xml",
+      "path": "10_process_access/exclude_lsass_noise.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_lsass_noise.xml",
+      "size": 1833
+    },
+    {
+      "name": "exclude_mcafee_endpoint.xml",
+      "path": "10_process_access/exclude_mcafee_endpoint.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_mcafee_endpoint.xml",
+      "size": 535
+    },
+    {
+      "name": "exclude_microsoft_defender_for_endpoint.xml",
+      "path": "10_process_access/exclude_microsoft_defender_for_endpoint.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_defender_for_endpoint.xml",
+      "size": 515
+    },
+    {
+      "name": "exclude_microsoft_onedrive.xml",
+      "path": "10_process_access/exclude_microsoft_onedrive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_onedrive.xml",
+      "size": 342
+    },
+    {
+      "name": "exclude_microsoft_outlook.xml",
+      "path": "10_process_access/exclude_microsoft_outlook.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_outlook.xml",
+      "size": 328
+    },
+    {
+      "name": "exclude_microsoft_powertoys.xml",
+      "path": "10_process_access/exclude_microsoft_powertoys.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_powertoys.xml",
+      "size": 360
+    },
+    {
+      "name": "exclude_microsoft_teams.xml",
+      "path": "10_process_access/exclude_microsoft_teams.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_teams.xml",
+      "size": 495
+    },
+    {
+      "name": "exclude_microsoft_windows_defender.xml",
+      "path": "10_process_access/exclude_microsoft_windows_defender.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_microsoft_windows_defender.xml",
+      "size": 528
+    },
+    {
+      "name": "exclude_mobaxterm.xml",
+      "path": "10_process_access/exclude_mobaxterm.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_mobaxterm.xml",
+      "size": 323
+    },
+    {
+      "name": "exclude_palo_alto_cortex_xdr.xml",
+      "path": "10_process_access/exclude_palo_alto_cortex_xdr.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_palo_alto_cortex_xdr.xml",
+      "size": 342
+    },
+    {
+      "name": "exclude_qualys.xml",
+      "path": "10_process_access/exclude_qualys.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_qualys.xml",
+      "size": 304
+    },
+    {
+      "name": "exclude_razr_sdk.xml",
+      "path": "10_process_access/exclude_razr_sdk.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_razr_sdk.xml",
+      "size": 329
+    },
+    {
+      "name": "exclude_sccm.xml",
+      "path": "10_process_access/exclude_sccm.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_sccm.xml",
+      "size": 295
+    },
+    {
+      "name": "exclude_splunk.xml",
+      "path": "10_process_access/exclude_splunk.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_splunk.xml",
+      "size": 291
+    },
+    {
+      "name": "exclude_visual_studio_code.xml",
+      "path": "10_process_access/exclude_visual_studio_code.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_visual_studio_code.xml",
+      "size": 1450
+    },
+    {
+      "name": "exclude_vmware_player.xml",
+      "path": "10_process_access/exclude_vmware_player.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_vmware_player.xml",
+      "size": 313
+    },
+    {
+      "name": "exclude_vmware_workstation.xml",
+      "path": "10_process_access/exclude_vmware_workstation.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_vmware_workstation.xml",
+      "size": 318
+    },
+    {
+      "name": "exclude_winzip.xml",
+      "path": "10_process_access/exclude_winzip.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/exclude_winzip.xml",
+      "size": 308
+    },
+    {
+      "name": "include_debugging.xml",
+      "path": "10_process_access/include_debugging.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_debugging.xml",
+      "size": 456
+    },
+    {
+      "name": "include_desktop.xml",
+      "path": "10_process_access/include_desktop.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_desktop.xml",
+      "size": 308
+    },
+    {
+      "name": "include_dumphashes.xml",
+      "path": "10_process_access/include_dumphashes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_dumphashes.xml",
+      "size": 2046
+    },
+    {
+      "name": "include_hook_check.xml",
+      "path": "10_process_access/include_hook_check.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_hook_check.xml",
+      "size": 396
+    },
+    {
+      "name": "include_lsass_access.xml",
+      "path": "10_process_access/include_lsass_access.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_lsass_access.xml",
+      "size": 2431
+    },
+    {
+      "name": "include_office_process_injection.xml",
+      "path": "10_process_access/include_office_process_injection.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_office_process_injection.xml",
+      "size": 612
+    },
+    {
+      "name": "include_possible_dll_injection.xml",
+      "path": "10_process_access/include_possible_dll_injection.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_possible_dll_injection.xml",
+      "size": 711
+    },
+    {
+      "name": "include_process_discovery.xml",
+      "path": "10_process_access/include_process_discovery.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_process_discovery.xml",
+      "size": 473
+    },
+    {
+      "name": "include_process_suspend_resume.xml",
+      "path": "10_process_access/include_process_suspend_resume.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_process_suspend_resume.xml",
+      "size": 1381
+    },
+    {
+      "name": "include_suspicious_locations.xml",
+      "path": "10_process_access/include_suspicious_locations.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_suspicious_locations.xml",
+      "size": 2814
+    },
+    {
+      "name": "include_suspicious_powershell.xml",
+      "path": "10_process_access/include_suspicious_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_suspicious_powershell.xml",
+      "size": 513
+    },
+    {
+      "name": "include_syscalls.xml",
+      "path": "10_process_access/include_syscalls.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/10_process_access/include_syscalls.xml",
+      "size": 819
+    }
+  ],
+  "11_file_create": [
+    {
+      "name": "exclude_dell_process.xml",
+      "path": "11_file_create/exclude_dell_process.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_dell_process.xml",
+      "size": 308
+    },
+    {
+      "name": "exclude_elastic_logs.xml",
+      "path": "11_file_create/exclude_elastic_logs.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_elastic_logs.xml",
+      "size": 962
+    },
+    {
+      "name": "exclude_intel_gfx_service.xml",
+      "path": "11_file_create/exclude_intel_gfx_service.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_intel_gfx_service.xml",
+      "size": 366
+    },
+    {
+      "name": "exclude_ivanti_res.xml",
+      "path": "11_file_create/exclude_ivanti_res.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_ivanti_res.xml",
+      "size": 408
+    },
+    {
+      "name": "exclude_microsoft_click2run.xml",
+      "path": "11_file_create/exclude_microsoft_click2run.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_microsoft_click2run.xml",
+      "size": 389
+    },
+    {
+      "name": "exclude_microsoft_prefetch.xml",
+      "path": "11_file_create/exclude_microsoft_prefetch.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_microsoft_prefetch.xml",
+      "size": 303
+    },
+    {
+      "name": "exclude_microsoft_services.xml",
+      "path": "11_file_create/exclude_microsoft_services.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_microsoft_services.xml",
+      "size": 1080
+    },
+    {
+      "name": "exclude_microsoft_windows_recent_files.xml",
+      "path": "11_file_create/exclude_microsoft_windows_recent_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_microsoft_windows_recent_files.xml",
+      "size": 365
+    },
+    {
+      "name": "exclude_microsoft_windows_update.xml",
+      "path": "11_file_create/exclude_microsoft_windows_update.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_microsoft_windows_update.xml",
+      "size": 552
+    },
+    {
+      "name": "exclude_msdatp.xml",
+      "path": "11_file_create/exclude_msdatp.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_msdatp.xml",
+      "size": 298
+    },
+    {
+      "name": "exclude_outlook_profile.xml",
+      "path": "11_file_create/exclude_outlook_profile.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_outlook_profile.xml",
+      "size": 607
+    },
+    {
+      "name": "exclude_provtool.xml",
+      "path": "11_file_create/exclude_provtool.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_provtool.xml",
+      "size": 364
+    },
+    {
+      "name": "exclude_psscriptpolicytest.xml",
+      "path": "11_file_create/exclude_psscriptpolicytest.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_psscriptpolicytest.xml",
+      "size": 818
+    },
+    {
+      "name": "exclude_sccm.xml",
+      "path": "11_file_create/exclude_sccm.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_sccm.xml",
+      "size": 350
+    },
+    {
+      "name": "exclude_scheduled_task_noise.xml",
+      "path": "11_file_create/exclude_scheduled_task_noise.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_scheduled_task_noise.xml",
+      "size": 1038
+    },
+    {
+      "name": "exclude_windows_heartbeat.xml",
+      "path": "11_file_create/exclude_windows_heartbeat.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/exclude_windows_heartbeat.xml",
+      "size": 671
+    },
+    {
+      "name": "include_ai_agent_configuration.xml",
+      "path": "11_file_create/include_ai_agent_configuration.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ai_agent_configuration.xml",
+      "size": 2571
+    },
+    {
+      "name": "include_ai_agent_hooks.xml",
+      "path": "11_file_create/include_ai_agent_hooks.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ai_agent_hooks.xml",
+      "size": 1588
+    },
+    {
+      "name": "include_ai_agent_instructions.xml",
+      "path": "11_file_create/include_ai_agent_instructions.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ai_agent_instructions.xml",
+      "size": 3887
+    },
+    {
+      "name": "include_ai_skill_files.xml",
+      "path": "11_file_create/include_ai_skill_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ai_skill_files.xml",
+      "size": 332
+    },
+    {
+      "name": "include_appc_shim.xml",
+      "path": "11_file_create/include_appc_shim.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_appc_shim.xml",
+      "size": 351
+    },
+    {
+      "name": "include_batch_files.xml",
+      "path": "11_file_create/include_batch_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_batch_files.xml",
+      "size": 438
+    },
+    {
+      "name": "include_chm_files.xml",
+      "path": "11_file_create/include_chm_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_chm_files.xml",
+      "size": 395
+    },
+    {
+      "name": "include_chrome_edge_extension_changes.xml",
+      "path": "11_file_create/include_chrome_edge_extension_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_chrome_edge_extension_changes.xml",
+      "size": 1102
+    },
+    {
+      "name": "include_cloud_credendials.xml",
+      "path": "11_file_create/include_cloud_credendials.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_cloud_credendials.xml",
+      "size": 687
+    },
+    {
+      "name": "include_credendtials.xml",
+      "path": "11_file_create/include_credendtials.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_credendtials.xml",
+      "size": 286
+    },
+    {
+      "name": "include_credential_dump_artifacts.xml",
+      "path": "11_file_create/include_credential_dump_artifacts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_credential_dump_artifacts.xml",
+      "size": 1346
+    },
+    {
+      "name": "include_cve_2021_40444.xml",
+      "path": "11_file_create/include_cve_2021_40444.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_cve_2021_40444.xml",
+      "size": 805
+    },
+    {
+      "name": "include_dangerous_attachment_extensions.xml",
+      "path": "11_file_create/include_dangerous_attachment_extensions.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_dangerous_attachment_extensions.xml",
+      "size": 1479
+    },
+    {
+      "name": "include_default_profile_changes.xml",
+      "path": "11_file_create/include_default_profile_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_default_profile_changes.xml",
+      "size": 349
+    },
+    {
+      "name": "include_desktop.xml",
+      "path": "11_file_create/include_desktop.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_desktop.xml",
+      "size": 308
+    },
+    {
+      "name": "include_dotnet.xml",
+      "path": "11_file_create/include_dotnet.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_dotnet.xml",
+      "size": 1495
+    },
+    {
+      "name": "include_downloaded_files.xml",
+      "path": "11_file_create/include_downloaded_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_downloaded_files.xml",
+      "size": 374
+    },
+    {
+      "name": "include_drivers_added.xml",
+      "path": "11_file_create/include_drivers_added.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_drivers_added.xml",
+      "size": 519
+    },
+    {
+      "name": "include_electron_app_injection.xml",
+      "path": "11_file_create/include_electron_app_injection.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_electron_app_injection.xml",
+      "size": 1952
+    },
+    {
+      "name": "include_executables.xml",
+      "path": "11_file_create/include_executables.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_executables.xml",
+      "size": 295
+    },
+    {
+      "name": "include_group_policy_changes.xml",
+      "path": "11_file_create/include_group_policy_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_group_policy_changes.xml",
+      "size": 704
+    },
+    {
+      "name": "include_hta_scripts.xml",
+      "path": "11_file_create/include_hta_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_hta_scripts.xml",
+      "size": 347
+    },
+    {
+      "name": "include_iso.xml",
+      "path": "11_file_create/include_iso.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_iso.xml",
+      "size": 480
+    },
+    {
+      "name": "include_javascript.xml",
+      "path": "11_file_create/include_javascript.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_javascript.xml",
+      "size": 643
+    },
+    {
+      "name": "include_kirbi.xml",
+      "path": "11_file_create/include_kirbi.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_kirbi.xml",
+      "size": 335
+    },
+    {
+      "name": "include_links.xml",
+      "path": "11_file_create/include_links.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_links.xml",
+      "size": 466
+    },
+    {
+      "name": "include_lsass_dump_files.xml",
+      "path": "11_file_create/include_lsass_dump_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_lsass_dump_files.xml",
+      "size": 553
+    },
+    {
+      "name": "include_mde_sensor_file_tampering.xml",
+      "path": "11_file_create/include_mde_sensor_file_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_mde_sensor_file_tampering.xml",
+      "size": 686
+    },
+    {
+      "name": "include_microsoft_clickonce.xml",
+      "path": "11_file_create/include_microsoft_clickonce.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_microsoft_clickonce.xml",
+      "size": 499
+    },
+    {
+      "name": "include_microsoft_msbuild_scripts.xml",
+      "path": "11_file_create/include_microsoft_msbuild_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_microsoft_msbuild_scripts.xml",
+      "size": 704
+    },
+    {
+      "name": "include_microsoft_settingcontent-ms.xml",
+      "path": "11_file_create/include_microsoft_settingcontent-ms.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_microsoft_settingcontent-ms.xml",
+      "size": 413
+    },
+    {
+      "name": "include_ms_office_documents_with_macros.xml",
+      "path": "11_file_create/include_ms_office_documents_with_macros.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ms_office_documents_with_macros.xml",
+      "size": 1504
+    },
+    {
+      "name": "include_ms_office_excel_iqy_slk.xml",
+      "path": "11_file_create/include_ms_office_excel_iqy_slk.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_ms_office_excel_iqy_slk.xml",
+      "size": 592
+    },
+    {
+      "name": "include_outlook_attachments.xml",
+      "path": "11_file_create/include_outlook_attachments.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_outlook_attachments.xml",
+      "size": 358
+    },
+    {
+      "name": "include_outlook_persistence.xml",
+      "path": "11_file_create/include_outlook_persistence.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_outlook_persistence.xml",
+      "size": 691
+    },
+    {
+      "name": "include_overlooked_extensions.xml",
+      "path": "11_file_create/include_overlooked_extensions.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_overlooked_extensions.xml",
+      "size": 819
+    },
+    {
+      "name": "include_powershell_changes.xml",
+      "path": "11_file_create/include_powershell_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_powershell_changes.xml",
+      "size": 750
+    },
+    {
+      "name": "include_powershell_scripts.xml",
+      "path": "11_file_create/include_powershell_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_powershell_scripts.xml",
+      "size": 570
+    },
+    {
+      "name": "include_python_scripts.xml",
+      "path": "11_file_create/include_python_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_python_scripts.xml",
+      "size": 581
+    },
+    {
+      "name": "include_remote_access_credentials.xml",
+      "path": "11_file_create/include_remote_access_credentials.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_remote_access_credentials.xml",
+      "size": 1038
+    },
+    {
+      "name": "include_remote_desktop_files.xml",
+      "path": "11_file_create/include_remote_desktop_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_remote_desktop_files.xml",
+      "size": 270
+    },
+    {
+      "name": "include_rundll32.xml",
+      "path": "11_file_create/include_rundll32.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_rundll32.xml",
+      "size": 393
+    },
+    {
+      "name": "include_scheduled_task_changes.xml",
+      "path": "11_file_create/include_scheduled_task_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_scheduled_task_changes.xml",
+      "size": 523
+    },
+    {
+      "name": "include_security_configuration_changes.xml",
+      "path": "11_file_create/include_security_configuration_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_security_configuration_changes.xml",
+      "size": 851
+    },
+    {
+      "name": "include_start_menu_items.xml",
+      "path": "11_file_create/include_start_menu_items.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_start_menu_items.xml",
+      "size": 409
+    },
+    {
+      "name": "include_startup_items.xml",
+      "path": "11_file_create/include_startup_items.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_startup_items.xml",
+      "size": 427
+    },
+    {
+      "name": "include_system_drive.xml",
+      "path": "11_file_create/include_system_drive.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_system_drive.xml",
+      "size": 680
+    },
+    {
+      "name": "include_system_driver_files.xml",
+      "path": "11_file_create/include_system_driver_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_system_driver_files.xml",
+      "size": 371
+    },
+    {
+      "name": "include_taskmanager_lsass.xml",
+      "path": "11_file_create/include_taskmanager_lsass.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_taskmanager_lsass.xml",
+      "size": 544
+    },
+    {
+      "name": "include_url.xml",
+      "path": "11_file_create/include_url.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_url.xml",
+      "size": 263
+    },
+    {
+      "name": "include_visual_basic_scripts.xml",
+      "path": "11_file_create/include_visual_basic_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_visual_basic_scripts.xml",
+      "size": 492
+    },
+    {
+      "name": "include_vscode_extension_changes.xml",
+      "path": "11_file_create/include_vscode_extension_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_vscode_extension_changes.xml",
+      "size": 1020
+    },
+    {
+      "name": "include_wdac.xml",
+      "path": "11_file_create/include_wdac.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_wdac.xml",
+      "size": 1022
+    },
+    {
+      "name": "include_windows_credential_store_changes.xml",
+      "path": "11_file_create/include_windows_credential_store_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_windows_credential_store_changes.xml",
+      "size": 1026
+    },
+    {
+      "name": "include_wmi_changes.xml",
+      "path": "11_file_create/include_wmi_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_wmi_changes.xml",
+      "size": 1020
+    },
+    {
+      "name": "include_writable_folders.xml",
+      "path": "11_file_create/include_writable_folders.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/11_file_create/include_writable_folders.xml",
+      "size": 1115
+    }
+  ],
+  "12_13_14_registry_event": [
+    {
+      "name": "exclude_cisco_anyconnect.xml",
+      "path": "12_13_14_registry_event/exclude_cisco_anyconnect.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_cisco_anyconnect.xml",
+      "size": 511
+    },
+    {
+      "name": "exclude_cylance.xml",
+      "path": "12_13_14_registry_event/exclude_cylance.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_cylance.xml",
+      "size": 398
+    },
+    {
+      "name": "exclude_hklm_ccs_tcpip.xml",
+      "path": "12_13_14_registry_event/exclude_hklm_ccs_tcpip.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_hklm_ccs_tcpip.xml",
+      "size": 885
+    },
+    {
+      "name": "exclude_internet_explorer_settings.xml",
+      "path": "12_13_14_registry_event/exclude_internet_explorer_settings.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_internet_explorer_settings.xml",
+      "size": 888
+    },
+    {
+      "name": "exclude_ivanti.xml",
+      "path": "12_13_14_registry_event/exclude_ivanti.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_ivanti.xml",
+      "size": 408
+    },
+    {
+      "name": "exclude_kaspersky_lab_internet_security.xml",
+      "path": "12_13_14_registry_event/exclude_kaspersky_lab_internet_security.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_kaspersky_lab_internet_security.xml",
+      "size": 459
+    },
+    {
+      "name": "exclude_mcafee_endpoint.xml",
+      "path": "12_13_14_registry_event/exclude_mcafee_endpoint.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_mcafee_endpoint.xml",
+      "size": 1690
+    },
+    {
+      "name": "exclude_microsoft_defender_for_endpoint.xml",
+      "path": "12_13_14_registry_event/exclude_microsoft_defender_for_endpoint.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_microsoft_defender_for_endpoint.xml",
+      "size": 644
+    },
+    {
+      "name": "exclude_microsoft_monitoring_agent.xml",
+      "path": "12_13_14_registry_event/exclude_microsoft_monitoring_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_microsoft_monitoring_agent.xml",
+      "size": 487
+    },
+    {
+      "name": "exclude_noise.xml",
+      "path": "12_13_14_registry_event/exclude_noise.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_noise.xml",
+      "size": 825
+    },
+    {
+      "name": "exclude_owncloud.xml",
+      "path": "12_13_14_registry_event/exclude_owncloud.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_owncloud.xml",
+      "size": 463
+    },
+    {
+      "name": "exclude_scheduled_task_cache.xml",
+      "path": "12_13_14_registry_event/exclude_scheduled_task_cache.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_scheduled_task_cache.xml",
+      "size": 427
+    },
+    {
+      "name": "exclude_sentinelone_endpoint.xml",
+      "path": "12_13_14_registry_event/exclude_sentinelone_endpoint.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_sentinelone_endpoint.xml",
+      "size": 364
+    },
+    {
+      "name": "exclude_system_process.xml",
+      "path": "12_13_14_registry_event/exclude_system_process.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_system_process.xml",
+      "size": 238
+    },
+    {
+      "name": "exclude_vmware_tools.xml",
+      "path": "12_13_14_registry_event/exclude_vmware_tools.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_vmware_tools.xml",
+      "size": 423
+    },
+    {
+      "name": "exclude_webroot.xml",
+      "path": "12_13_14_registry_event/exclude_webroot.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_webroot.xml",
+      "size": 309
+    },
+    {
+      "name": "exclude_widcomm_bt_driver.xml",
+      "path": "12_13_14_registry_event/exclude_widcomm_bt_driver.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_widcomm_bt_driver.xml",
+      "size": 353
+    },
+    {
+      "name": "exclude_windows_bootup_control.xml",
+      "path": "12_13_14_registry_event/exclude_windows_bootup_control.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_windows_bootup_control.xml",
+      "size": 1316
+    },
+    {
+      "name": "exclude_windows_file_exts.xml",
+      "path": "12_13_14_registry_event/exclude_windows_file_exts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_windows_file_exts.xml",
+      "size": 1253
+    },
+    {
+      "name": "exclude_windows_generic_binaries.xml",
+      "path": "12_13_14_registry_event/exclude_windows_generic_binaries.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_windows_generic_binaries.xml",
+      "size": 978
+    },
+    {
+      "name": "exclude_windows_misc.xml",
+      "path": "12_13_14_registry_event/exclude_windows_misc.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_windows_misc.xml",
+      "size": 4930
+    },
+    {
+      "name": "exclude_windows_service_autostart.xml",
+      "path": "12_13_14_registry_event/exclude_windows_service_autostart.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/exclude_windows_service_autostart.xml",
+      "size": 1539
+    },
+    {
+      "name": "include_aedebug_debugger_changes.xml",
+      "path": "12_13_14_registry_event/include_aedebug_debugger_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_aedebug_debugger_changes.xml",
+      "size": 594
+    },
+    {
+      "name": "include_amsi_provider_changes.xml",
+      "path": "12_13_14_registry_event/include_amsi_provider_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_amsi_provider_changes.xml",
+      "size": 459
+    },
+    {
+      "name": "include_appc_shim.xml",
+      "path": "12_13_14_registry_event/include_appc_shim.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_appc_shim.xml",
+      "size": 620
+    },
+    {
+      "name": "include_authentication_package.xml",
+      "path": "12_13_14_registry_event/include_authentication_package.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_authentication_package.xml",
+      "size": 874
+    },
+    {
+      "name": "include_autoruns_and_startup_keys.xml",
+      "path": "12_13_14_registry_event/include_autoruns_and_startup_keys.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_autoruns_and_startup_keys.xml",
+      "size": 6944
+    },
+    {
+      "name": "include_bcd_store_changes.xml",
+      "path": "12_13_14_registry_event/include_bcd_store_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_bcd_store_changes.xml",
+      "size": 345
+    },
+    {
+      "name": "include_bypass_uac.xml",
+      "path": "12_13_14_registry_event/include_bypass_uac.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_bypass_uac.xml",
+      "size": 737
+    },
+    {
+      "name": "include_code_integrity_policy_changes.xml",
+      "path": "12_13_14_registry_event/include_code_integrity_policy_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_code_integrity_policy_changes.xml",
+      "size": 1021
+    },
+    {
+      "name": "include_com_hijack.xml",
+      "path": "12_13_14_registry_event/include_com_hijack.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_com_hijack.xml",
+      "size": 965
+    },
+    {
+      "name": "include_credential_dumping_via_vss.xml",
+      "path": "12_13_14_registry_event/include_credential_dumping_via_vss.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_credential_dumping_via_vss.xml",
+      "size": 409
+    },
+    {
+      "name": "include_disable_password_change.xml",
+      "path": "12_13_14_registry_event/include_disable_password_change.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_disable_password_change.xml",
+      "size": 374
+    },
+    {
+      "name": "include_dll_injection_at_process_launch.xml",
+      "path": "12_13_14_registry_event/include_dll_injection_at_process_launch.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_dll_injection_at_process_launch.xml",
+      "size": 704
+    },
+    {
+      "name": "include_dns_serverdll_injection.xml",
+      "path": "12_13_14_registry_event/include_dns_serverdll_injection.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_dns_serverdll_injection.xml",
+      "size": 387
+    },
+    {
+      "name": "include_dotnet_ETW_tampering.xml",
+      "path": "12_13_14_registry_event/include_dotnet_ETW_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_dotnet_ETW_tampering.xml",
+      "size": 464
+    },
+    {
+      "name": "include_environment_mod.xml",
+      "path": "12_13_14_registry_event/include_environment_mod.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_environment_mod.xml",
+      "size": 1139
+    },
+    {
+      "name": "include_eventlog.xml",
+      "path": "12_13_14_registry_event/include_eventlog.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_eventlog.xml",
+      "size": 592
+    },
+    {
+      "name": "include_eventlog_service_registry_changes.xml",
+      "path": "12_13_14_registry_event/include_eventlog_service_registry_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_eventlog_service_registry_changes.xml",
+      "size": 634
+    },
+    {
+      "name": "include_explorer_extension_persistence.xml",
+      "path": "12_13_14_registry_event/include_explorer_extension_persistence.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_explorer_extension_persistence.xml",
+      "size": 1164
+    },
+    {
+      "name": "include_group_policy_integrity.xml",
+      "path": "12_13_14_registry_event/include_group_policy_integrity.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_group_policy_integrity.xml",
+      "size": 537
+    },
+    {
+      "name": "include_image_file_exec_options.xml",
+      "path": "12_13_14_registry_event/include_image_file_exec_options.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_image_file_exec_options.xml",
+      "size": 690
+    },
+    {
+      "name": "include_internet_explorer_extentions_helpers_or_toolbars.xml",
+      "path": "12_13_14_registry_event/include_internet_explorer_extentions_helpers_or_toolbars.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_internet_explorer_extentions_helpers_or_toolbars.xml",
+      "size": 1682
+    },
+    {
+      "name": "include_local_port_monitor.xml",
+      "path": "12_13_14_registry_event/include_local_port_monitor.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_local_port_monitor.xml",
+      "size": 384
+    },
+    {
+      "name": "include_lsa_package_changes.xml",
+      "path": "12_13_14_registry_event/include_lsa_package_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_lsa_package_changes.xml",
+      "size": 989
+    },
+    {
+      "name": "include_mde_autologger_tampering.xml",
+      "path": "12_13_14_registry_event/include_mde_autologger_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_mde_autologger_tampering.xml",
+      "size": 660
+    },
+    {
+      "name": "include_mounted_devices.xml",
+      "path": "12_13_14_registry_event/include_mounted_devices.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_mounted_devices.xml",
+      "size": 417
+    },
+    {
+      "name": "include_netsh.xml",
+      "path": "12_13_14_registry_event/include_netsh.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_netsh.xml",
+      "size": 366
+    },
+    {
+      "name": "include_office.xml",
+      "path": "12_13_14_registry_event/include_office.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_office.xml",
+      "size": 5544
+    },
+    {
+      "name": "include_office_dde.xml",
+      "path": "12_13_14_registry_event/include_office_dde.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_office_dde.xml",
+      "size": 635
+    },
+    {
+      "name": "include_office_security_features.xml",
+      "path": "12_13_14_registry_event/include_office_security_features.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_office_security_features.xml",
+      "size": 741
+    },
+    {
+      "name": "include_process_command_line_auditing_changes.xml",
+      "path": "12_13_14_registry_event/include_process_command_line_auditing_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_process_command_line_auditing_changes.xml",
+      "size": 481
+    },
+    {
+      "name": "include_proxy_configuration_changes.xml",
+      "path": "12_13_14_registry_event/include_proxy_configuration_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_proxy_configuration_changes.xml",
+      "size": 903
+    },
+    {
+      "name": "include_rdp_logon_execution.xml",
+      "path": "12_13_14_registry_event/include_rdp_logon_execution.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_rdp_logon_execution.xml",
+      "size": 617
+    },
+    {
+      "name": "include_rdp_terminal_service_sensitive_settings.xml",
+      "path": "12_13_14_registry_event/include_rdp_terminal_service_sensitive_settings.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_rdp_terminal_service_sensitive_settings.xml",
+      "size": 1271
+    },
+    {
+      "name": "include_scheduled_tasks_path.xml",
+      "path": "12_13_14_registry_event/include_scheduled_tasks_path.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_scheduled_tasks_path.xml",
+      "size": 819
+    },
+    {
+      "name": "include_security_support_provider.xml",
+      "path": "12_13_14_registry_event/include_security_support_provider.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_security_support_provider.xml",
+      "size": 434
+    },
+    {
+      "name": "include_sensitive_hive_registry_changes.xml",
+      "path": "12_13_14_registry_event/include_sensitive_hive_registry_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_sensitive_hive_registry_changes.xml",
+      "size": 674
+    },
+    {
+      "name": "include_services.xml",
+      "path": "12_13_14_registry_event/include_services.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_services.xml",
+      "size": 436
+    },
+    {
+      "name": "include_sip_trust_provider_hijacking.xml",
+      "path": "12_13_14_registry_event/include_sip_trust_provider_hijacking.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_sip_trust_provider_hijacking.xml",
+      "size": 1256
+    },
+    {
+      "name": "include_sysinternals.xml",
+      "path": "12_13_14_registry_event/include_sysinternals.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_sysinternals.xml",
+      "size": 1920
+    },
+    {
+      "name": "include_sysmon.xml",
+      "path": "12_13_14_registry_event/include_sysmon.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_sysmon.xml",
+      "size": 478
+    },
+    {
+      "name": "include_terminal_service_execution.xml",
+      "path": "12_13_14_registry_event/include_terminal_service_execution.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_terminal_service_execution.xml",
+      "size": 473
+    },
+    {
+      "name": "include_w32time_provider.xml",
+      "path": "12_13_14_registry_event/include_w32time_provider.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_w32time_provider.xml",
+      "size": 391
+    },
+    {
+      "name": "include_windows_address_book.xml",
+      "path": "12_13_14_registry_event/include_windows_address_book.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_address_book.xml",
+      "size": 362
+    },
+    {
+      "name": "include_windows_app_path_hijack.xml",
+      "path": "12_13_14_registry_event/include_windows_app_path_hijack.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_app_path_hijack.xml",
+      "size": 685
+    },
+    {
+      "name": "include_windows_com_objects.xml",
+      "path": "12_13_14_registry_event/include_windows_com_objects.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_com_objects.xml",
+      "size": 632
+    },
+    {
+      "name": "include_windows_consent.xml",
+      "path": "12_13_14_registry_event/include_windows_consent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_consent.xml",
+      "size": 3392
+    },
+    {
+      "name": "include_windows_credential_providers.xml",
+      "path": "12_13_14_registry_event/include_windows_credential_providers.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_credential_providers.xml",
+      "size": 1254
+    },
+    {
+      "name": "include_windows_defender_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_defender_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_defender_tampering.xml",
+      "size": 3072
+    },
+    {
+      "name": "include_windows_disabling_security_services.xml",
+      "path": "12_13_14_registry_event/include_windows_disabling_security_services.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_disabling_security_services.xml",
+      "size": 3113
+    },
+    {
+      "name": "include_windows_firewall_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_firewall_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_firewall_tampering.xml",
+      "size": 1537
+    },
+    {
+      "name": "include_windows_integrity_monitoring.xml",
+      "path": "12_13_14_registry_event/include_windows_integrity_monitoring.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_integrity_monitoring.xml",
+      "size": 2118
+    },
+    {
+      "name": "include_windows_networking.xml",
+      "path": "12_13_14_registry_event/include_windows_networking.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_networking.xml",
+      "size": 743
+    },
+    {
+      "name": "include_windows_port_changes.xml",
+      "path": "12_13_14_registry_event/include_windows_port_changes.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_port_changes.xml",
+      "size": 890
+    },
+    {
+      "name": "include_windows_powershell_logging_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_powershell_logging_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_powershell_logging_tampering.xml",
+      "size": 1016
+    },
+    {
+      "name": "include_windows_root_certs.xml",
+      "path": "12_13_14_registry_event/include_windows_root_certs.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_root_certs.xml",
+      "size": 764
+    },
+    {
+      "name": "include_windows_security_center_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_security_center_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_security_center_tampering.xml",
+      "size": 627
+    },
+    {
+      "name": "include_windows_shell_hijack.xml",
+      "path": "12_13_14_registry_event/include_windows_shell_hijack.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_shell_hijack.xml",
+      "size": 2095
+    },
+    {
+      "name": "include_windows_spooler_connections.xml",
+      "path": "12_13_14_registry_event/include_windows_spooler_connections.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_spooler_connections.xml",
+      "size": 564
+    },
+    {
+      "name": "include_windows_store_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_store_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_store_tampering.xml",
+      "size": 479
+    },
+    {
+      "name": "include_windows_telemetry_controller_persistence.xml",
+      "path": "12_13_14_registry_event/include_windows_telemetry_controller_persistence.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_telemetry_controller_persistence.xml",
+      "size": 444
+    },
+    {
+      "name": "include_windows_thumbnail_autostart.xml",
+      "path": "12_13_14_registry_event/include_windows_thumbnail_autostart.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_thumbnail_autostart.xml",
+      "size": 569
+    },
+    {
+      "name": "include_windows_uac_tampering.xml",
+      "path": "12_13_14_registry_event/include_windows_uac_tampering.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windows_uac_tampering.xml",
+      "size": 1505
+    },
+    {
+      "name": "include_windowsupdate_autostart.xml",
+      "path": "12_13_14_registry_event/include_windowsupdate_autostart.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_windowsupdate_autostart.xml",
+      "size": 895
+    },
+    {
+      "name": "include_winsock.xml",
+      "path": "12_13_14_registry_event/include_winsock.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_winsock.xml",
+      "size": 540
+    },
+    {
+      "name": "include_wmi_implant.xml",
+      "path": "12_13_14_registry_event/include_wmi_implant.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/12_13_14_registry_event/include_wmi_implant.xml",
+      "size": 1260
+    }
+  ],
+  "15_file_create_stream_hash": [
+    {
+      "name": "include_7zip_extractions.xml",
+      "path": "15_file_create_stream_hash/include_7zip_extractions.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_7zip_extractions.xml",
+      "size": 344
+    },
+    {
+      "name": "include_batch_scripts.xml",
+      "path": "15_file_create_stream_hash/include_batch_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_batch_scripts.xml",
+      "size": 411
+    },
+    {
+      "name": "include_bin_files.xml",
+      "path": "15_file_create_stream_hash/include_bin_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_bin_files.xml",
+      "size": 450
+    },
+    {
+      "name": "include_dll_files.xml",
+      "path": "15_file_create_stream_hash/include_dll_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_dll_files.xml",
+      "size": 292
+    },
+    {
+      "name": "include_exe_files.xml",
+      "path": "15_file_create_stream_hash/include_exe_files.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_exe_files.xml",
+      "size": 292
+    },
+    {
+      "name": "include_general_commment.xml",
+      "path": "15_file_create_stream_hash/include_general_commment.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_general_commment.xml",
+      "size": 637
+    },
+    {
+      "name": "include_hta_scripts.xml",
+      "path": "15_file_create_stream_hash/include_hta_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_hta_scripts.xml",
+      "size": 346
+    },
+    {
+      "name": "include_html_smuggling.xml",
+      "path": "15_file_create_stream_hash/include_html_smuggling.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_html_smuggling.xml",
+      "size": 510
+    },
+    {
+      "name": "include_lnk_shortcuts.xml",
+      "path": "15_file_create_stream_hash/include_lnk_shortcuts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_lnk_shortcuts.xml",
+      "size": 339
+    },
+    {
+      "name": "include_outlook_attachments.xml",
+      "path": "15_file_create_stream_hash/include_outlook_attachments.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_outlook_attachments.xml",
+      "size": 376
+    },
+    {
+      "name": "include_powershell_scripts.xml",
+      "path": "15_file_create_stream_hash/include_powershell_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_powershell_scripts.xml",
+      "size": 494
+    },
+    {
+      "name": "include_registry_file.xml",
+      "path": "15_file_create_stream_hash/include_registry_file.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_registry_file.xml",
+      "size": 318
+    },
+    {
+      "name": "include_suspicious_locations.xml",
+      "path": "15_file_create_stream_hash/include_suspicious_locations.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_suspicious_locations.xml",
+      "size": 638
+    },
+    {
+      "name": "include_visual_basic_scripts.xml",
+      "path": "15_file_create_stream_hash/include_visual_basic_scripts.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/15_file_create_stream_hash/include_visual_basic_scripts.xml",
+      "size": 512
+    }
+  ],
+  "17_18_pipe_event": [
+    {
+      "name": "exclude_MSSQL.xml",
+      "path": "17_18_pipe_event/exclude_MSSQL.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_MSSQL.xml",
+      "size": 754
+    },
+    {
+      "name": "exclude_adobe.xml",
+      "path": "17_18_pipe_event/exclude_adobe.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_adobe.xml",
+      "size": 1441
+    },
+    {
+      "name": "exclude_azure_sentinel_agent.xml",
+      "path": "17_18_pipe_event/exclude_azure_sentinel_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_azure_sentinel_agent.xml",
+      "size": 385
+    },
+    {
+      "name": "exclude_call_manager.xml",
+      "path": "17_18_pipe_event/exclude_call_manager.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_call_manager.xml",
+      "size": 880
+    },
+    {
+      "name": "exclude_citrix.xml",
+      "path": "17_18_pipe_event/exclude_citrix.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_citrix.xml",
+      "size": 864
+    },
+    {
+      "name": "exclude_fireeye_agent.xml",
+      "path": "17_18_pipe_event/exclude_fireeye_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_fireeye_agent.xml",
+      "size": 282
+    },
+    {
+      "name": "exclude_google_chrome.xml",
+      "path": "17_18_pipe_event/exclude_google_chrome.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_google_chrome.xml",
+      "size": 890
+    },
+    {
+      "name": "exclude_ibm_watson_explorer.xml",
+      "path": "17_18_pipe_event/exclude_ibm_watson_explorer.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_ibm_watson_explorer.xml",
+      "size": 272
+    },
+    {
+      "name": "exclude_microsoft_edge.xml",
+      "path": "17_18_pipe_event/exclude_microsoft_edge.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_microsoft_edge.xml",
+      "size": 897
+    },
+    {
+      "name": "exclude_microsoft_outlook.xml",
+      "path": "17_18_pipe_event/exclude_microsoft_outlook.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_microsoft_outlook.xml",
+      "size": 412
+    },
+    {
+      "name": "exclude_microsoft_teams.xml",
+      "path": "17_18_pipe_event/exclude_microsoft_teams.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_microsoft_teams.xml",
+      "size": 643
+    },
+    {
+      "name": "exclude_mozilla_firefox.xml",
+      "path": "17_18_pipe_event/exclude_mozilla_firefox.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_mozilla_firefox.xml",
+      "size": 865
+    },
+    {
+      "name": "exclude_postgres.xml",
+      "path": "17_18_pipe_event/exclude_postgres.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_postgres.xml",
+      "size": 341
+    },
+    {
+      "name": "exclude_qlik_sense.xml",
+      "path": "17_18_pipe_event/exclude_qlik_sense.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_qlik_sense.xml",
+      "size": 285
+    },
+    {
+      "name": "exclude_qualys_agent.xml",
+      "path": "17_18_pipe_event/exclude_qualys_agent.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_qualys_agent.xml",
+      "size": 295
+    },
+    {
+      "name": "exclude_splunk.xml",
+      "path": "17_18_pipe_event/exclude_splunk.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_splunk.xml",
+      "size": 516
+    },
+    {
+      "name": "exclude_trend_micro.xml",
+      "path": "17_18_pipe_event/exclude_trend_micro.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_trend_micro.xml",
+      "size": 1951
+    },
+    {
+      "name": "exclude_windows_generic.xml",
+      "path": "17_18_pipe_event/exclude_windows_generic.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/exclude_windows_generic.xml",
+      "size": 664
+    },
+    {
+      "name": "include_Havoc_C2.xml",
+      "path": "17_18_pipe_event/include_Havoc_C2.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_Havoc_C2.xml",
+      "size": 258
+    },
+    {
+      "name": "include_all.xml",
+      "path": "17_18_pipe_event/include_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_all.xml",
+      "size": 351
+    },
+    {
+      "name": "include_atsvc.xml",
+      "path": "17_18_pipe_event/include_atsvc.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_atsvc.xml",
+      "size": 330
+    },
+    {
+      "name": "include_cobaltstrike.xml",
+      "path": "17_18_pipe_event/include_cobaltstrike.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_cobaltstrike.xml",
+      "size": 1345
+    },
+    {
+      "name": "include_covenant.xml",
+      "path": "17_18_pipe_event/include_covenant.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_covenant.xml",
+      "size": 375
+    },
+    {
+      "name": "include_crackmapexec.xml",
+      "path": "17_18_pipe_event/include_crackmapexec.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_crackmapexec.xml",
+      "size": 375
+    },
+    {
+      "name": "include_metasploit.xml",
+      "path": "17_18_pipe_event/include_metasploit.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_metasploit.xml",
+      "size": 379
+    },
+    {
+      "name": "include_powershell.xml",
+      "path": "17_18_pipe_event/include_powershell.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_powershell.xml",
+      "size": 463
+    },
+    {
+      "name": "include_psexec.xml",
+      "path": "17_18_pipe_event/include_psexec.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_psexec.xml",
+      "size": 333
+    },
+    {
+      "name": "include_srvsvc.xml",
+      "path": "17_18_pipe_event/include_srvsvc.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_srvsvc.xml",
+      "size": 373
+    },
+    {
+      "name": "include_tsvcpipe.xml",
+      "path": "17_18_pipe_event/include_tsvcpipe.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_tsvcpipe.xml",
+      "size": 320
+    },
+    {
+      "name": "include_winreg.xml",
+      "path": "17_18_pipe_event/include_winreg.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/17_18_pipe_event/include_winreg.xml",
+      "size": 374
+    }
+  ],
+  "19_20_21_wmi_event": [
+    {
+      "name": "exclude_wmi_none.xml",
+      "path": "19_20_21_wmi_event/exclude_wmi_none.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/19_20_21_wmi_event/exclude_wmi_none.xml",
+      "size": 550
+    },
+    {
+      "name": "include_wmi_create.xml",
+      "path": "19_20_21_wmi_event/include_wmi_create.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/19_20_21_wmi_event/include_wmi_create.xml",
+      "size": 409
+    }
+  ],
+  "22_dns_query": [
+    {
+      "name": "exclude_ads.xml",
+      "path": "22_dns_query/exclude_ads.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_ads.xml",
+      "size": 9503
+    },
+    {
+      "name": "exclude_browser_updates.xml",
+      "path": "22_dns_query/exclude_browser_updates.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_browser_updates.xml",
+      "size": 1110
+    },
+    {
+      "name": "exclude_cdn_networks.xml",
+      "path": "22_dns_query/exclude_cdn_networks.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_cdn_networks.xml",
+      "size": 1159
+    },
+    {
+      "name": "exclude_local_machine.xml",
+      "path": "22_dns_query/exclude_local_machine.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_local_machine.xml",
+      "size": 796
+    },
+    {
+      "name": "exclude_logitech.xml",
+      "path": "22_dns_query/exclude_logitech.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_logitech.xml",
+      "size": 416
+    },
+    {
+      "name": "exclude_microsoft_defender_atp.xml",
+      "path": "22_dns_query/exclude_microsoft_defender_atp.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_microsoft_defender_atp.xml",
+      "size": 401
+    },
+    {
+      "name": "exclude_microsoft_domains.xml",
+      "path": "22_dns_query/exclude_microsoft_domains.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_microsoft_domains.xml",
+      "size": 2879
+    },
+    {
+      "name": "exclude_o365_azure.xml",
+      "path": "22_dns_query/exclude_o365_azure.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_o365_azure.xml",
+      "size": 1179
+    },
+    {
+      "name": "exclude_ocsp_domains.xml",
+      "path": "22_dns_query/exclude_ocsp_domains.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_ocsp_domains.xml",
+      "size": 1636
+    },
+    {
+      "name": "exclude_sentinelone.xml",
+      "path": "22_dns_query/exclude_sentinelone.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_sentinelone.xml",
+      "size": 319
+    },
+    {
+      "name": "exclude_spotify.xml",
+      "path": "22_dns_query/exclude_spotify.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_spotify.xml",
+      "size": 432
+    },
+    {
+      "name": "exclude_windows_search.xml",
+      "path": "22_dns_query/exclude_windows_search.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/22_dns_query/exclude_windows_search.xml",
+      "size": 339
+    }
+  ],
+  "24_clipboard_change": [
+    {
+      "name": "exclude_all.xml",
+      "path": "24_clipboard_change/exclude_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/24_clipboard_change/exclude_all.xml",
+      "size": 218
+    }
+  ],
+  "25_process_tampering": [
+    {
+      "name": "exclude_firefox.xml",
+      "path": "25_process_tampering/exclude_firefox.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_firefox.xml",
+      "size": 556
+    },
+    {
+      "name": "exclude_git.xml",
+      "path": "25_process_tampering/exclude_git.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_git.xml",
+      "size": 449
+    },
+    {
+      "name": "exclude_microsoft_edge.xml",
+      "path": "25_process_tampering/exclude_microsoft_edge.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_microsoft_edge.xml",
+      "size": 962
+    },
+    {
+      "name": "exclude_symantec.xml",
+      "path": "25_process_tampering/exclude_symantec.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_symantec.xml",
+      "size": 347
+    },
+    {
+      "name": "exclude_unknown_process.xml",
+      "path": "25_process_tampering/exclude_unknown_process.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_unknown_process.xml",
+      "size": 267
+    },
+    {
+      "name": "exclude_vscode.xml",
+      "path": "25_process_tampering/exclude_vscode.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_vscode.xml",
+      "size": 289
+    },
+    {
+      "name": "exclude_wmiadap.xml",
+      "path": "25_process_tampering/exclude_wmiadap.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/exclude_wmiadap.xml",
+      "size": 290
+    },
+    {
+      "name": "include_all.xml",
+      "path": "25_process_tampering/include_all.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/25_process_tampering/include_all.xml",
+      "size": 259
+    }
+  ],
+  "29_file_executable_detected": [
+    {
+      "name": "include_browser_executable_drops.xml",
+      "path": "29_file_executable_detected/include_browser_executable_drops.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_browser_executable_drops.xml",
+      "size": 588
+    },
+    {
+      "name": "include_living_off_the_land.xml",
+      "path": "29_file_executable_detected/include_living_off_the_land.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_living_off_the_land.xml",
+      "size": 9831
+    },
+    {
+      "name": "include_msbuild.xml",
+      "path": "29_file_executable_detected/include_msbuild.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_msbuild.xml",
+      "size": 358
+    },
+    {
+      "name": "include_msoffice.xml",
+      "path": "29_file_executable_detected/include_msoffice.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_msoffice.xml",
+      "size": 908
+    },
+    {
+      "name": "include_qualys.xml",
+      "path": "29_file_executable_detected/include_qualys.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_qualys.xml",
+      "size": 380
+    },
+    {
+      "name": "include_shells.xml",
+      "path": "29_file_executable_detected/include_shells.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_shells.xml",
+      "size": 747
+    },
+    {
+      "name": "include_user_writable_folders.xml",
+      "path": "29_file_executable_detected/include_user_writable_folders.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_user_writable_folders.xml",
+      "size": 653
+    },
+    {
+      "name": "include_vscode_extension_executables.xml",
+      "path": "29_file_executable_detected/include_vscode_extension_executables.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_vscode_extension_executables.xml",
+      "size": 761
+    },
+    {
+      "name": "include_windows_remote_management.xml",
+      "path": "29_file_executable_detected/include_windows_remote_management.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_windows_remote_management.xml",
+      "size": 596
+    },
+    {
+      "name": "include_writable_folders.xml",
+      "path": "29_file_executable_detected/include_writable_folders.xml",
+      "download_url": "https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/29_file_executable_detected/include_writable_folders.xml",
+      "size": 1642
+    }
+  ]
+}

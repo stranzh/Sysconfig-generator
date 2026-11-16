@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sysmon-Generator | High-Fidelity Sysmon XML Config Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-icon">🛡️</div>
+      <div>
+        <div class="brand-title">Sysmon<span>Generator</span></div>
+        <div class="brand-subtitle">Modular Baseline • LOLOL • ATT&amp;CK • Software Profiler</div>
+      </div>
+    </div>
+    <div class="header-badges">
+      <span class="badge badge-green">✓ Client-Side Pure JS</span>
+      <span class="badge badge-purple">No Electron</span>
+      <span class="badge badge-blue">FileDelete Excluded (No Noise)</span>
+    </div>
+  </header>
+
+  <!-- Main Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" data-tab="tab-presets">
+      <span>⚡ Baseline &amp; Presets</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-events">
+      <span>📋 Sysmon Events</span>
+      <span class="tab-pill">19 IDs</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-lolbas">
+      <span>🎯 LOLOL / LOLBAS Matrix</span>
+      <span class="tab-pill" id="lolbas-selected-badge">245 Enabled</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-software">
+      <span>💻 Software Monitoring</span>
+      <span class="tab-pill">Inclusions &amp; Exclusions</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-scanner">
+      <span>🔍 Software Scanner</span>
+      <span class="tab-pill">Rule Suggester</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-custom">
+      <span>⚙️ Custom Rules</span>
+      <span class="tab-pill">Path / Hash / CLI</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-projects">
+      <span>🌐 lolol.farm Index</span>
+      <span class="tab-pill">37 Projects</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-xml" style="color:var(--accent-cyan); font-weight:700;">
+      <span>📄 XML Output &amp; Deploy</span>
+    </button>
+  </nav>
+
+  <!-- Main App Body -->
+  <main class="app-container">
+
+    <!-- 1. Presets & Baseline Tab -->
+    <section id="tab-presets" class="tab-content active">
+      <div class="callout callout-info">
+        <div>
+          <strong>Architecture Design Notice:</strong> This generator uses <code>sysmon-modular</code> as its underlying architectural pattern. Per specifications, <strong>FileDelete (Events 23 &amp; 26) are strictly excluded</strong> to prevent disk exhaustion, high I/O latency, and unnecessary endpoint overhead.
+        </div>
+      </div>
+
+      <h3 style="margin-bottom:14px; font-size:1.2rem;">Choose Configuration Profile</h3>
+      <div class="grid-3" style="margin-bottom:28px;">
+        <div class="card preset-card active-preset" data-preset="balanced" style="cursor:pointer;">
+          <div class="card-title">
+            <span>Enterprise Balanced</span>
+            <span class="tag tag-include">Recommended</span>
+          </div>
+          <p class="card-desc">High-signal defense focusing on process execution, network telemetry, credential protection (LSASS), registry persistence, and LOLBAS abuse. Excludes low-yield telemetry.</p>
+        </div>
+
+        <div class="card preset-card" data-preset="aggressive" style="cursor:pointer;">
+          <div class="card-title">
+            <span>Threat Hunting / High Telemetry</span>
+            <span class="tag tag-attack">Aggressive</span>
+          </div>
+          <p class="card-desc">Enables telemetry across all 19 supported event types, comprehensive image/module loads, pipe connections, and WMI filters for thorough SOC investigation.</p>
+        </div>
+
+        <div class="card preset-card" data-preset="minimal" style="cursor:pointer;">
+          <div class="card-title">
+            <span>Low Resource / Critical Events</span>
+            <span class="tag">Minimal</span>
+          </div>
+          <p class="card-desc">Lightweight profile limited to Process Creation (Event 1), Network Connections (Event 3), and LSASS / EDR Process Tampering (Event 10/25). Ideal for low-spec VMs.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4 style="margin-bottom:14px; font-size:1.05rem;">Global Engine Parameters</h4>
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Sysmon Schema Version</label>
+            <input type="text" class="input-field input-field-mono" id="opt-schema" value="4.50">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hash Algorithms</label>
+            <input type="text" class="input-field input-field-mono" id="opt-hashes" value="md5,sha256,IMPHASH">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Check Certificate Revocation</label>
+            <select class="select-field" id="opt-revocation">
+              <option value="true" selected>Enabled (Recommended)</option>
+              <option value="false">Disabled</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Sysmon Event Types Tab -->
+    <section id="tab-events" class="tab-content">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+        <div>
+          <h3 style="font-size:1.2rem;">Sysmon Event Filtering Rules</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem;">Toggle and inspect active event groups. Rules will be formatted inside respective modular <code>&lt;RuleGroup&gt;</code> blocks.</p>
+        </div>
+      </div>
+      <div class="grid-3" id="event-types-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- 3. LOLBAS & LOLOL Matrix Tab -->
+    <section id="tab-lolbas" class="tab-content">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <div>
+          <h3 style="font-size:1.2rem;">Living Off The Land Binaries &amp; Scripts (LOLBAS)</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem;">Direct integration of <a href="https://lolbas-project.github.io/" target="_blank" style="color:var(--accent-cyan);">LOLBAS</a> and indexed techniques from <a href="https://lolol.farm/" target="_blank" style="color:var(--accent-cyan);">lolol.farm</a> with ATT&amp;CK mappings.</p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-secondary btn-sm" id="btn-select-all-lolbas">Select All</button>
+          <button class="btn btn-secondary btn-sm" id="btn-deselect-all-lolbas">Deselect All</button>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="lolbas-search" placeholder="Search by binary name, path, MITRE technique (e.g. T1218, T1059), or category (AWL Bypass, Download, Execute)...">
+      </div>
+
+      <div style="margin-bottom:10px; font-size:0.85rem; color:var(--text-muted);" id="lolbas-total-count">
+        245 / 245 active
+      </div>
+
+      <div class="table-wrapper">
+        <table class="rule-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Binary / Script Name</th>
+              <th>Common Executable Paths</th>
+              <th>LOLOL Category</th>
+              <th>MITRE ATT&amp;CK</th>
+            </tr>
+          </thead>
+          <tbody id="lolbas-table-body">
+            <!-- Injected via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Software Monitoring & Exclusions Tab -->
+    <section id="tab-software" class="tab-content">
+      <div style="margin-bottom:18px;">
+        <h3 style="font-size:1.2rem;">Detailed Software Monitoring &amp; Exclusions</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Pre-tuned rules for common enterprise suites (Browsers, EDR agents, Developer toolchains, RMM). Filter operational noise while monitoring for high-risk misuse.</p>
+      </div>
+
+      <div id="software-catalog-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- 5. Software Scanner & Rule Suggester Tab -->
+    <section id="tab-scanner" class="tab-content">
+      <div class="callout callout-info">
+        <div>
+          <strong>Optional Software Scanner:</strong> Run the lightweight scanner script on any Windows endpoint to generate a software and running process inventory JSON. Sysmon-Generator will analyze the report, match found software against known profiles, and propose tuned Sysmon inclusion/exclusion rules.
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px;">
+        <div class="card">
+          <h4 style="margin-bottom:10px;">Step 1: Run Scanner on Endpoint</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:14px;">Open an administrative PowerShell prompt on the target machine and run:</p>
+          <div class="code-preview" style="max-height:120px; padding:12px; font-size:0.8rem; margin-bottom:14px;">powershell.exe -ExecutionPolicy Bypass -File .\scripts\scan_software.ps1</div>
+          <p style="font-size:0.8rem; color:var(--text-dim);">This produces <code>software_scan_report.json</code> with installed software and running process signatures.</p>
+        </div>
+
+        <div class="card" id="scan-dropzone" style="border: 2px dashed var(--border-color); text-align:center; padding:36px; cursor:pointer;">
+          <div style="font-size:2rem; margin-bottom:10px;">📂</div>
+          <strong style="font-size:1.05rem;">Step 2: Upload or Drop Scan Report</strong>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:6px;">Click or drag <code>software_scan_report.json</code> here</p>
+          <input type="file" id="scan-file-input" accept=".json" style="display:none;">
+        </div>
+      </div>
+
+      <div id="scan-results" style="display:none;">
+        <h4 style="margin-bottom:14px; font-size:1.1rem; color:var(--accent-cyan);">Inventory Analysis &amp; Rule Recommendations</h4>
+        <div id="scan-matches-list">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Custom Rules Tab -->
+    <section id="tab-custom" class="tab-content">
+      <div class="card" style="margin-bottom:24px;">
+        <h4 style="margin-bottom:14px; font-size:1.1rem;">Create Custom Rule (Path, Hash, CLI, Image)</h4>
+        <div class="grid-3" style="margin-bottom:14px;">
+          <div class="form-group">
+            <label class="form-label">Sysmon Event</label>
+            <select class="select-field" id="rule-event">
+              <option value="ProcessCreate">ProcessCreate (Event 1)</option>
+              <option value="NetworkConnect">NetworkConnect (Event 3)</option>
+              <option value="ImageLoad">ImageLoad (Event 7)</option>
+              <option value="ProcessAccess">ProcessAccess (Event 10)</option>
+              <option value="FileCreate">FileCreate (Event 11)</option>
+              <option value="RegistryEvent">RegistryEvent (Event 12/13/14)</option>
+              <option value="PipeEvent">PipeEvent (Event 17/18)</option>
+              <option value="DnsQuery">DnsQuery (Event 22)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Rule Action</label>
+            <select class="select-field" id="rule-action">
+              <option value="include">Include (Monitor / Alert)</option>
+              <option value="exclude">Exclude (Filter / Suppress Noise)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Field Name</label>
+            <select class="select-field" id="rule-field">
+              <option value="Image">Image (Executable Path)</option>
+              <option value="CommandLine">CommandLine</option>
+              <option value="OriginalFileName">OriginalFileName</option>
+              <option value="ParentImage">ParentImage</option>
+              <option value="Hashes">Hashes (SHA256, MD5, IMPHASH)</option>
+              <option value="TargetFilename">TargetFilename</option>
+              <option value="TargetObject">TargetObject (Registry)</option>
+              <option value="DestinationIp">DestinationIp</option>
+              <option value="QueryName">QueryName (DNS)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-bottom:14px;">
+          <div class="form-group">
+            <label class="form-label">Condition Matching</label>
+            <select class="select-field" id="rule-condition">
+              <option value="is">is (Exact match)</option>
+              <option value="begin with">begin with (Prefix / Directory)</option>
+              <option value="end with">end with (Suffix / Filename)</option>
+              <option value="contains">contains (Substring)</option>
+              <option value="image">image</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Target Pattern / Path / Hash</label>
+            <input type="text" class="input-field input-field-mono" id="rule-value" placeholder="e.g. C:\Tools\mytool.exe or SHA256=abcdef...">
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom:18px;">
+          <label class="form-label">Rule Description / Comment</label>
+          <input type="text" class="input-field" id="rule-comment" placeholder="Context notes for security review (e.g. Custom in-house deployment tool)">
+        </div>
+
+        <button class="btn btn-cyan" id="btn-add-rule">+ Add Rule to Config</button>
+      </div>
+
+      <h4 style="margin-bottom:12px; font-size:1.05rem;">Active Custom Rules</h4>
+      <div class="table-wrapper">
+        <table class="rule-table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Action</th>
+              <th>Field &amp; Condition</th>
+              <th>Target Value</th>
+              <th>Description</th>
+              <th style="text-align:right;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="custom-rules-body">
+            <!-- Injected via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7. lolol.farm Research Projects Tab -->
+    <section id="tab-projects" class="tab-content">
+      <div style="margin-bottom:18px;">
+        <h3 style="font-size:1.2rem;">Living Off The Land Research Projects (<a href="https://lolol.farm/" target="_blank" style="color:var(--accent-cyan); text-decoration:none;">lolol.farm</a>)</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Curated index of 37 Living Off The Land security initiatives indexed by lolol.farm and incorporated into Sysmon-Generator's rule mapping.</p>
+      </div>
+      <div class="grid-3" id="lolol-projects-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- 8. XML Output & Deploy Tab -->
+    <section id="tab-xml" class="tab-content">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+        <div>
+          <h3 style="font-size:1.2rem;">Generated Sysmon XML Configuration</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem;">Real-time generated configuration ready for installation and deployment.</p>
+        </div>
+        <div style="display:flex; gap:12px; align-items:center;">
+          <span class="badge badge-blue" id="xml-rule-count">0 Active Rules</span>
+          <span class="badge badge-purple" id="xml-line-count">0 Lines</span>
+          <button class="btn btn-secondary" id="btn-copy-xml">📋 Copy XML</button>
+          <button class="btn btn-success" id="btn-download-xml">⬇ Download sysmonconfig.xml</button>
+        </div>
+      </div>
+
+      <div class="card" style="padding:14px; margin-bottom:18px; font-size:0.85rem; color:var(--text-muted);">
+        <strong>Deployment Guide:</strong>
+        <code style="color:#67e8f9; margin: 0 6px;">sysmon64.exe -accepteula -i sysmonconfig.xml</code> (Install) or
+        <code style="color:#67e8f9; margin: 0 6px;">sysmon64.exe -c sysmonconfig.xml</code> (Update). Read the full manual in <a href="docs/WIKI.md" target="_blank" style="color:var(--accent-cyan);">docs/WIKI.md</a>.
+      </div>
+
+      <pre class="code-preview" id="xml-preview"><code><!-- Generating configuration... --></code></pre>
+    </section>
+
+  </main>
+
+  <!-- App Footer -->
+  <footer>
+    <div>Sysmon-Generator v1.0.0 • Pure Client-Side Architecture (Zero-Attack-Surface)</div>
+    <div>Documentation &amp; Manual: <a href="docs/WIKI.md" target="_blank" style="color:var(--text-muted);">docs/WIKI.md</a></div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/data_bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

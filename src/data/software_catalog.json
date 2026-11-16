@@ -1,0 +1,566 @@
+[
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "category": "Browser",
+    "vendor": "Google",
+    "executables": [
+      "chrome.exe",
+      "googleupdate.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--load-extension=",
+          "technique": "T1176",
+          "comment": "Detect unauthorized browser extension loading"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--remote-debugging-port=",
+          "technique": "T1185",
+          "comment": "Detect remote browser debugging session hijack"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=",
+          "comment": "Filter Chrome child renderer/utility noise"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" --type=",
+          "comment": "Filter Chrome x86 child processes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "edge",
+    "name": "Microsoft Edge",
+    "category": "Browser",
+    "vendor": "Microsoft",
+    "executables": [
+      "msedge.exe",
+      "MicrosoftEdgeUpdate.exe"
+    ],
+    "paths": [
+      "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--load-extension=",
+          "technique": "T1176",
+          "comment": "Detect unauthorized Edge extension injection"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--remote-debugging-port=",
+          "technique": "T1185",
+          "comment": "Detect Edge remote debugging abuse"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=",
+          "comment": "Filter Edge renderer noise"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe\" --type=",
+          "comment": "Filter Edge renderer noise"
+        }
+      ]
+    }
+  },
+  {
+    "id": "firefox",
+    "name": "Mozilla Firefox",
+    "category": "Browser",
+    "vendor": "Mozilla",
+    "executables": [
+      "firefox.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "-headless",
+          "technique": "T1185",
+          "comment": "Detect Headless browser automated sessions"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc",
+          "comment": "Filter Firefox content sandboxed processes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "crowdstrike",
+    "name": "CrowdStrike Falcon Sensor",
+    "category": "EDR / Security",
+    "vendor": "CrowdStrike",
+    "executables": [
+      "CSFalconService.exe",
+      "CSFalconContainer.exe"
+    ],
+    "paths": [
+      "C:\\Windows\\System32\\drivers\\CrowdStrike\\CSFalconService.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessTampering",
+          "condition": "image",
+          "field": "Image",
+          "value": "CSFalconService.exe",
+          "technique": "T1562.001",
+          "comment": "Detect Falcon Sensor tamper attempts"
+        },
+        {
+          "event": "ProcessAccess",
+          "condition": "end with",
+          "field": "TargetImage",
+          "value": "\\CSFalconService.exe",
+          "technique": "T1562.001",
+          "comment": "Detect process memory dumping or termination attempts on Falcon"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "is",
+          "field": "Image",
+          "value": "C:\\Windows\\System32\\drivers\\CrowdStrike\\CSFalconService.exe",
+          "comment": "CrowdStrike core agent execution"
+        }
+      ]
+    }
+  },
+  {
+    "id": "defender",
+    "name": "Microsoft Defender Antivirus / MDE",
+    "category": "EDR / Security",
+    "vendor": "Microsoft",
+    "executables": [
+      "MsMpEng.exe",
+      "NisSrv.exe",
+      "SenseCncProxy.exe",
+      "SenseIR.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\Windows Defender\\MsMpEng.exe",
+      "C:\\Program Files\\Windows Defender Advanced Threat Protection\\MsSense.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessAccess",
+          "condition": "end with",
+          "field": "TargetImage",
+          "value": "\\MsMpEng.exe",
+          "technique": "T1562.001",
+          "comment": "Detect unauthorized handle access to Defender"
+        },
+        {
+          "event": "RegistryEvent",
+          "condition": "contains",
+          "field": "TargetObject",
+          "value": "SOFTWARE\\Policies\\Microsoft\\Windows Defender\\DisableAntiSpyware",
+          "technique": "T1562.001",
+          "comment": "Detect Defender disable attempt in Registry"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "Image",
+          "value": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\",
+          "comment": "Defender platform updater and worker processes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sentinelone",
+    "name": "SentinelOne Singularity Agent",
+    "category": "EDR / Security",
+    "vendor": "SentinelOne",
+    "executables": [
+      "SentinelAgent.exe",
+      "SentinelServiceHost.exe",
+      "SentinelStaticEngine.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\SentinelOne\\Sentinel Agent\\SentinelAgent.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessAccess",
+          "condition": "end with",
+          "field": "TargetImage",
+          "value": "\\SentinelAgent.exe",
+          "technique": "T1562.001",
+          "comment": "Detect tampering or injection into SentinelAgent"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "Image",
+          "value": "C:\\Program Files\\SentinelOne\\",
+          "comment": "SentinelOne internal operations"
+        }
+      ]
+    }
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "category": "Development",
+    "vendor": "Microsoft",
+    "executables": [
+      "Code.exe"
+    ],
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+      "C:\\Program Files\\Microsoft VS Code\\Code.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--ms-enable-electron-run-as-node",
+          "technique": "T1059",
+          "comment": "Detect VS Code abused as Node.js runner to execute arbitrary scripts"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" --type=",
+          "comment": "VS Code renderer noise"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js",
+          "comment": "VS Code extension host internal forks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "git",
+    "name": "Git for Windows",
+    "category": "Development",
+    "vendor": "Git",
+    "executables": [
+      "git.exe",
+      "sh.exe",
+      "bash.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\Git\\bin\\git.exe",
+      "C:\\Program Files\\Git\\bin\\bash.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "core.editor",
+          "technique": "T1059",
+          "comment": "Git configuration hook command execution"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "is",
+          "field": "Image",
+          "value": "C:\\Program Files\\Git\\cmd\\git.exe",
+          "comment": "Standard git invocations"
+        }
+      ]
+    }
+  },
+  {
+    "id": "python",
+    "name": "Python Runtime",
+    "category": "Development",
+    "vendor": "Python Software Foundation",
+    "executables": [
+      "python.exe",
+      "pythonw.exe"
+    ],
+    "paths": [
+      "C:\\Python*\\python.exe",
+      "C:\\Users\\*\\AppData\\Local\\Programs\\Python\\*\\python.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "-c \"import socket",
+          "technique": "T1059.006",
+          "comment": "Python reverse shell one-liner"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "-c \"import urllib",
+          "technique": "T1105",
+          "comment": "Python direct ingress tool download"
+        }
+      ],
+      "exclude": []
+    }
+  },
+  {
+    "id": "anydesk",
+    "name": "AnyDesk Remote Desktop",
+    "category": "Remote Management / RMM",
+    "vendor": "AnyDesk",
+    "executables": [
+      "AnyDesk.exe"
+    ],
+    "paths": [
+      "C:\\Program Files (x86)\\AnyDesk\\AnyDesk.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--install",
+          "technique": "T1219",
+          "comment": "AnyDesk silent install execution"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--set-password",
+          "technique": "T1219",
+          "comment": "AnyDesk unattended access password setting"
+        }
+      ],
+      "exclude": []
+    }
+  },
+  {
+    "id": "teamviewer",
+    "name": "TeamViewer",
+    "category": "Remote Management / RMM",
+    "vendor": "TeamViewer",
+    "executables": [
+      "TeamViewer.exe",
+      "TeamViewer_Service.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\TeamViewer\\TeamViewer.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "image",
+          "field": "Image",
+          "value": "TeamViewer.exe",
+          "technique": "T1219",
+          "comment": "Monitor unauthorized TeamViewer presence"
+        }
+      ],
+      "exclude": []
+    }
+  },
+  {
+    "id": "slack",
+    "name": "Slack Client",
+    "category": "Communication",
+    "vendor": "Slack Technologies",
+    "executables": [
+      "slack.exe"
+    ],
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\slack\\slack.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "--remote-debugging-port",
+          "technique": "T1185",
+          "comment": "Detect Slack Electron debug injection"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Users\\*\\AppData\\Local\\slack\\app-",
+          "comment": "Filter Slack child processes"
+        }
+      ]
+    }
+  },
+  {
+    "id": "office",
+    "name": "Microsoft Office 365 / Click-to-Run",
+    "category": "Productivity",
+    "vendor": "Microsoft",
+    "executables": [
+      "WINWORD.EXE",
+      "EXCEL.EXE",
+      "POWERPNT.EXE",
+      "OUTLOOK.EXE"
+    ],
+    "paths": [
+      "C:\\Program Files\\Microsoft Office\\root\\Office16\\*.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "is",
+          "field": "ParentImage",
+          "value": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+          "technique": "T1204.002",
+          "comment": "Detect child process spawned by Word (macro execution)"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "is",
+          "field": "ParentImage",
+          "value": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+          "technique": "T1204.002",
+          "comment": "Detect child process spawned by Excel (macro execution)"
+        }
+      ],
+      "exclude": [
+        {
+          "event": "ProcessCreate",
+          "condition": "begin with",
+          "field": "CommandLine",
+          "value": "\"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeClickToRun.exe\"",
+          "comment": "Office ClickToRun updater"
+        }
+      ]
+    }
+  },
+  {
+    "id": "7zip",
+    "name": "7-Zip Archiver",
+    "category": "Utility",
+    "vendor": "Igor Pavlov",
+    "executables": [
+      "7z.exe",
+      "7zFM.exe",
+      "7zG.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\7-Zip\\7z.exe",
+      "C:\\Program Files\\7-Zip\\7zG.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": " -p",
+          "technique": "T1560.001",
+          "comment": "Detect command-line archive password encryption (data staging)"
+        }
+      ],
+      "exclude": []
+    }
+  },
+  {
+    "id": "powershell_7",
+    "name": "PowerShell 7 (pwsh)",
+    "category": "System / Administration",
+    "vendor": "Microsoft",
+    "executables": [
+      "pwsh.exe"
+    ],
+    "paths": [
+      "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    ],
+    "monitoring": {
+      "include": [
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "-enc",
+          "technique": "T1059.001",
+          "comment": "PowerShell 7 EncodedCommand invocation"
+        },
+        {
+          "event": "ProcessCreate",
+          "condition": "contains",
+          "field": "CommandLine",
+          "value": "-nop",
+          "technique": "T1059.001",
+          "comment": "PowerShell 7 NoProfile bypass execution"
+        }
+      ],
+      "exclude": []
+    }
+  }
+]

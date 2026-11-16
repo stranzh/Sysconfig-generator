@@ -1,0 +1,31 @@
+{
+  "scanner_version": "1.0.0",
+  "timestamp": "2026-11-16T23:00:56.608661",
+  "os_info": {
+    "Caption": "Linux 6.12.105+",
+    "Architecture": "x86_64"
+  },
+  "installed_software": [],
+  "running_processes": [
+    {
+      "name": "exe",
+      "path": "/exe",
+      "publisher": "Unknown"
+    },
+    {
+      "name": "bash",
+      "path": "/bash",
+      "publisher": "Unknown"
+    },
+    {
+      "name": "python3",
+      "path": "/python3",
+      "publisher": "Unknown"
+    },
+    {
+      "name": "ps",
+      "path": "/ps",
+      "publisher": "Unknown"
+    }
+  ]
+}
