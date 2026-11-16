@@ -93,6 +93,30 @@
     });
   });
 
+  // --- Global Engine Parameters Handlers ---
+  const optSchema = document.getElementById("opt-schema");
+  const optHashes = document.getElementById("opt-hashes");
+  const optRevocation = document.getElementById("opt-revocation");
+
+  if (optSchema) {
+    optSchema.addEventListener("input", (e) => {
+      state.schemaVersion = e.target.value.trim() || "4.50";
+      renderXmlPreview();
+    });
+  }
+  if (optHashes) {
+    optHashes.addEventListener("input", (e) => {
+      state.hashAlgorithms = e.target.value.trim() || "md5,sha256,IMPHASH";
+      renderXmlPreview();
+    });
+  }
+  if (optRevocation) {
+    optRevocation.addEventListener("change", (e) => {
+      state.checkRevocation = e.target.value === "true";
+      renderXmlPreview();
+    });
+  }
+
   // --- Presets Handler ---
   document.querySelectorAll(".preset-card").forEach(card => {
     card.addEventListener("click", () => {
@@ -385,7 +409,11 @@
         const report = JSON.parse(e.target.result);
         processScanReport(report);
       } catch (err) {
-        alert("Invalid JSON inventory report: " + err.message);
+        scanResultsContainer.style.display = "block";
+        const container = document.getElementById("scan-matches-list");
+        if (container) {
+          container.innerHTML = `<div class="callout callout-warning"><strong>Invalid Scan File:</strong> ${escapeHtml(err.message)}. Please verify this is a valid JSON file exported by <code>scan_software.ps1</code> or <code>scan_software.sh</code>.</div>`;
+        }
       }
     };
     reader.readAsText(file);
