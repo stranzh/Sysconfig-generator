@@ -65,5 +65,5 @@ Write-Host "    Found $($results.running_processes.Count) running processes with
 
 # 3. Export JSON
 $results | ConvertTo-Json -Depth 4 | Set-Content -Path $OutputFile -Encoding UTF8
-Write-Host "[✓] Scan completed! Report saved to: $OutputFile" -ForegroundColor Green
-Write-Host "    Import this file into Sysmon-Generator -> Software Scanner tab." -ForegroundColor Cyan
+Write-Host "[OK] Scan completed! Report saved to: $OutputFile" -ForegroundColor Green
+Write-Host "     Import this file into Sysmon-Generator -> Software Scanner tab." -ForegroundColor Cyan

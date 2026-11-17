@@ -15,7 +15,26 @@
       "drivers"
     ],
     "url": "https://loldrivers.io",
-    "description": "Living Off The Land Drivers \u2014 a curated list of Windows drivers used by adversaries to bypass security controls and carry out attacks."
+    "description": "Living Off The Land Drivers \u2014 a curated list of Windows drivers used by adversaries to bypass security controls and carry out attacks.",
+    "rule_template": {
+      "event": "DriverLoad",
+      "action": "include",
+      "description": "LOLDrivers: Monitor untrusted / vulnerable 3rd-party kernel drivers (BYOVD)",
+      "rules": [
+        {
+          "field": "Signature",
+          "condition": "is not",
+          "value": "Microsoft Windows",
+          "comment": "Untrusted kernel driver load (LOLDrivers BYOVD detection)"
+        },
+        {
+          "field": "ImageLoaded",
+          "condition": "begin with",
+          "value": "C:\\Windows\\Temp\\",
+          "comment": "Driver drop & load from Temp directory"
+        }
+      ]
+    }
   },
   {
     "title": "GTFOBins",
@@ -24,7 +43,20 @@
       "binaries"
     ],
     "url": "https://gtfobins.github.io",
-    "description": "A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems."
+    "description": "A curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "GTFOBins: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "gtfobins",
+          "comment": "Living off the land activity for GTFOBins"
+        }
+      ]
+    }
   },
   {
     "title": "LOLBAS",
@@ -33,7 +65,20 @@
       "binaries"
     ],
     "url": "https://lolbas-project.github.io",
-    "description": "The goal of the LOLBAS project is to document every binary, script, and library that can be used for Living Off The Land techniques."
+    "description": "The goal of the LOLBAS project is to document every binary, script, and library that can be used for Living Off The Land techniques.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOLBAS: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "lolbas",
+          "comment": "Living off the land activity for LOLBAS"
+        }
+      ]
+    }
   },
   {
     "title": "LOTS Project",
@@ -43,7 +88,20 @@
       "exfiltration"
     ],
     "url": "https://lots-project.com",
-    "description": "Attackers use popular legitimate domains for phishing, C&amp;C, exfiltration and tool downloads to evade detection. This list catalogs domains that allow user-controlled subdomains."
+    "description": "Attackers use popular legitimate domains for phishing, C&amp;C, exfiltration and tool downloads to evade detection. This list catalogs domains that allow user-controlled subdomains.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOTS Project: Remote channel and exfiltration monitoring",
+      "rules": [
+        {
+          "field": "DestinationPort",
+          "condition": "is",
+          "value": "443",
+          "comment": "LOTS Project exfiltration channel"
+        }
+      ]
+    }
   },
   {
     "title": "FileSec",
@@ -52,7 +110,44 @@
       "file-extensions"
     ],
     "url": "https://filesec.io",
-    "description": "File extensions being used by attackers \u2014 a reference for defenders tracking evolving delivery techniques."
+    "description": "File extensions being used by attackers \u2014 a reference for defenders tracking evolving delivery techniques.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "FileSec: Execution of dangerous/exotic file extensions abused by initial access payloads",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": ".hta",
+          "comment": "HTML Application execution (FileSec)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": ".iso",
+          "comment": "Container image mounting (FileSec mark-of-the-web evasion)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": ".vhd",
+          "comment": "Virtual hard disk payload mount (FileSec)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": ".xll",
+          "comment": "Excel Add-In execution (FileSec)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": ".settingcontent-ms",
+          "comment": "SettingContent-ms payload execution"
+        }
+      ]
+    }
   },
   {
     "title": "MalAPI.io",
@@ -70,7 +165,38 @@
       "DLL-hijacking"
     ],
     "url": "https://hijacklibs.net",
-    "description": "A curated list of DLL Hijacking candidates for Windows environments."
+    "description": "A curated list of DLL Hijacking candidates for Windows environments.",
+    "rule_template": {
+      "event": "ImageLoad",
+      "action": "include",
+      "description": "HijackLibs: DLL Search Order Hijacking and side-loading detection",
+      "rules": [
+        {
+          "field": "ImageLoaded",
+          "condition": "begin with",
+          "value": "C:\\Users\\",
+          "comment": "DLL loaded from user-writable AppData/Temp space"
+        },
+        {
+          "field": "ImageLoaded",
+          "condition": "end with",
+          "value": "\\version.dll",
+          "comment": "Known hijacked proxy DLL (version.dll)"
+        },
+        {
+          "field": "ImageLoaded",
+          "condition": "end with",
+          "value": "\\dbghelp.dll",
+          "comment": "Known hijacked proxy DLL (dbghelp.dll)"
+        },
+        {
+          "field": "ImageLoaded",
+          "condition": "end with",
+          "value": "\\userenv.dll",
+          "comment": "Known hijacked proxy DLL (userenv.dll)"
+        }
+      ]
+    }
   },
   {
     "title": "WADComs",
@@ -80,7 +206,38 @@
       "red-team"
     ],
     "url": "https://wadcoms.github.io",
-    "description": "An interactive cheat sheet of offensive security tools and commands for Windows/AD environments."
+    "description": "An interactive cheat sheet of offensive security tools and commands for Windows/AD environments.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "WADComs: Active Directory enumeration and exploitation commands",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "kerberoast",
+          "comment": "Kerberoasting invocation (WADComs)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "Get-ADUser -Filter",
+          "comment": "PowerShell AD user mass query"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "ntdsutil",
+          "comment": "NTDS.dit Active Directory database extraction"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "dsquery",
+          "comment": "Built-in Active Directory query CLI (WADComs)"
+        }
+      ]
+    }
   },
   {
     "title": "LOOBins",
@@ -89,7 +246,20 @@
       "binaries"
     ],
     "url": "https://www.loobins.io",
-    "description": "Living Off the Orchard: macOS Binaries \u2014 detailed information on built-in macOS binaries and how threat actors abuse them."
+    "description": "Living Off the Orchard: macOS Binaries \u2014 detailed information on built-in macOS binaries and how threat actors abuse them.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOOBins: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "loobins",
+          "comment": "Living off the land activity for LOOBins"
+        }
+      ]
+    }
   },
   {
     "title": "LOLApps",
@@ -98,7 +268,32 @@
       "applications"
     ],
     "url": "https://lolapps-project.github.io/",
-    "description": "Exploitation isn't limited to command-line binaries \u2014 built-in and third-party applications get abused too. This project catalogs those techniques."
+    "description": "Exploitation isn't limited to command-line binaries \u2014 built-in and third-party applications get abused too. This project catalogs those techniques.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOLApps: Popular third-party enterprise applications abused for proxy execution",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "vlc.exe rc",
+          "comment": "VLC media player remote control CLI execution"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "winrar.exe a -hp",
+          "comment": "Encrypted archive staging with WinRAR (LOLApps)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "notepad++.exe -openPlugin",
+          "comment": "Notepad++ untrusted plugin load"
+        }
+      ]
+    }
   },
   {
     "title": "Bootloaders",
@@ -133,7 +328,32 @@
       "binaries"
     ],
     "url": "https://wtfbins.wtf/",
-    "description": "A WTFBin is a binary that behaves exactly like malware \u2014 except, somehow, it's not."
+    "description": "A WTFBin is a binary that behaves exactly like malware \u2014 except, somehow, it's not.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "WTFBins: Obscure or unexpected binaries exhibiting Living Off The Land traits",
+      "rules": [
+        {
+          "field": "OriginalFileName",
+          "condition": "is",
+          "value": "AppVLP.exe",
+          "comment": "AppVLP Application Virtualization Launcher (WTFBins)"
+        },
+        {
+          "field": "OriginalFileName",
+          "condition": "is",
+          "value": "Tracker.exe",
+          "comment": "Microsoft .NET SDK File Tracker (WTFBins execute)"
+        },
+        {
+          "field": "OriginalFileName",
+          "condition": "is",
+          "value": "DevtoolsLauncher.exe",
+          "comment": "Devtools launcher proxy execution"
+        }
+      ]
+    }
   },
   {
     "title": "LOFL Project",
@@ -142,7 +362,20 @@
       "binaries"
     ],
     "url": "https://lofl-project.github.io/",
-    "description": "Living Off the Foreign Land \u2014 Cmdlets and Binaries (LOFLCABs) that perform activities from the local Windows system against a remote system."
+    "description": "Living Off the Foreign Land \u2014 Cmdlets and Binaries (LOFLCABs) that perform activities from the local Windows system against a remote system.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOFL Project: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "lofl project",
+          "comment": "Living off the land activity for LOFL Project"
+        }
+      ]
+    }
   },
   {
     "title": "Persistence Info",
@@ -151,7 +384,44 @@
       "persistence"
     ],
     "url": "https://persistence-info.github.io/",
-    "description": "Information on Windows persistence mechanisms, organized to make protection and detection more efficient."
+    "description": "Information on Windows persistence mechanisms, organized to make protection and detection more efficient.",
+    "rule_template": {
+      "event": "RegistryEvent",
+      "action": "include",
+      "description": "Persistence Info: Windows persistence locations, IFEO, and accessibility keys",
+      "rules": [
+        {
+          "field": "TargetObject",
+          "condition": "contains",
+          "value": "\\Image File Execution Options\\",
+          "comment": "IFEO debugger hijacking (Persistence Info)"
+        },
+        {
+          "field": "TargetObject",
+          "condition": "contains",
+          "value": "\\CurrentVersion\\Winlogon\\Userinit",
+          "comment": "Winlogon Userinit persistence"
+        },
+        {
+          "field": "TargetObject",
+          "condition": "contains",
+          "value": "\\CurrentVersion\\Winlogon\\Shell",
+          "comment": "Winlogon Shell replacement persistence"
+        },
+        {
+          "field": "TargetObject",
+          "condition": "contains",
+          "value": "\\Environment\\UserInitMprLogonScript",
+          "comment": "Logon script persistence"
+        },
+        {
+          "field": "TargetObject",
+          "condition": "contains",
+          "value": "\\Control\\Lsa\\Security Packages",
+          "comment": "LSA Security Package persistence (SSP)"
+        }
+      ]
+    }
   },
   {
     "title": "lolcerts",
@@ -160,7 +430,32 @@
       "certificates"
     ],
     "url": "https://github.com/WithSecureLabs/lolcerts",
-    "description": "Details of code-signing certificates known to be abused in the wild \u2014 stolen or legally-acquired, then used to sign malware."
+    "description": "Details of code-signing certificates known to be abused in the wild \u2014 stolen or legally-acquired, then used to sign malware.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "lolcerts: Certificate management and root CA manipulation",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "-addstore",
+          "comment": "Root certificate store tampering (lolcerts)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "certutil -dump",
+          "comment": "Certificate dumping with certutil"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "Export-Certificate",
+          "comment": "PowerShell certificate export"
+        }
+      ]
+    }
   },
   {
     "title": "LOTP",
@@ -179,7 +474,20 @@
       "threat-intel"
     ],
     "url": "https://lolbins-ctidriven.vercel.app/",
-    "description": "Helps cyber defenders understand how LOLBin binaries are used by threat actors during an intrusion, in a graphical and digestible format."
+    "description": "Helps cyber defenders understand how LOLBin binaries are used by threat actors during an intrusion, in a graphical and digestible format.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "lolbins-cti driven: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "lolbins-cti driven",
+          "comment": "Living off the land activity for lolbins-cti driven"
+        }
+      ]
+    }
   },
   {
     "title": "LOLESXi",
@@ -188,7 +496,20 @@
       "binaries"
     ],
     "url": "https://lolesxi-project.github.io/LOLESXi/",
-    "description": "A comprehensive list of binaries and scripts natively available in VMware ESXi that adversaries have used in their operations."
+    "description": "A comprehensive list of binaries and scripts natively available in VMware ESXi that adversaries have used in their operations.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOLESXi: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "lolesxi",
+          "comment": "Living off the land activity for LOLESXi"
+        }
+      ]
+    }
   },
   {
     "title": "LOLRMM",
@@ -197,7 +518,38 @@
       "RMM"
     ],
     "url": "https://lolrmm.io/",
-    "description": "A curated list of Remote Monitoring and Management (RMM) tools that could potentially be abused by threat actors."
+    "description": "A curated list of Remote Monitoring and Management (RMM) tools that could potentially be abused by threat actors.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOLRMM: Remote Monitoring and Management tool presence & silent deployment",
+      "rules": [
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\ScreenConnect.ClientService.exe",
+          "comment": "ConnectWise / ScreenConnect agent (LOLRMM)"
+        },
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\AteraAgent.exe",
+          "comment": "Atera RMM Agent (LOLRMM)"
+        },
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\RustDesk.exe",
+          "comment": "RustDesk Remote Access (LOLRMM)"
+        },
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\SplashtopService.exe",
+          "comment": "Splashtop RMM agent (LOLRMM)"
+        }
+      ]
+    }
   },
   {
     "title": "LOT Webhooks",
@@ -208,7 +560,32 @@
       "exfiltration"
     ],
     "url": "https://lotwebhooks.github.io/index.html",
-    "description": "A community-driven project documenting webhooks that may be exploited for data exfiltration and C2 communications."
+    "description": "A community-driven project documenting webhooks that may be exploited for data exfiltration and C2 communications.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOT Webhooks: Discord / Slack / Telegram webhooks used for C2 and exfiltration",
+      "rules": [
+        {
+          "field": "DestinationHostname",
+          "condition": "contains",
+          "value": "discord.com",
+          "comment": "Discord webhook data exfiltration channel"
+        },
+        {
+          "field": "DestinationHostname",
+          "condition": "contains",
+          "value": "hooks.slack.com",
+          "comment": "Slack webhook data exfiltration channel"
+        },
+        {
+          "field": "DestinationHostname",
+          "condition": "contains",
+          "value": "api.telegram.org",
+          "comment": "Telegram bot API C2/exfiltration channel"
+        }
+      ]
+    }
   },
   {
     "title": "Project-Lost",
@@ -227,7 +604,38 @@
       "exfiltration"
     ],
     "url": "https://lottunnels.github.io/",
-    "description": "Documents digital tunnels that can be abused by threat actors or insiders for data exfiltration, persistence, and shell access."
+    "description": "Documents digital tunnels that can be abused by threat actors or insiders for data exfiltration, persistence, and shell access.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOT Tunnels: Living Off The Land proxy tunnels, ngrok, and port forwarding",
+      "rules": [
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\cloudflared.exe",
+          "comment": "Cloudflare Tunnel outbound (LOT Tunnels)"
+        },
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\ngrok.exe",
+          "comment": "Ngrok reverse tunnel (LOT Tunnels)"
+        },
+        {
+          "field": "Image",
+          "condition": "end with",
+          "value": "\\frpc.exe",
+          "comment": "FRP Client reverse proxy (LOT Tunnels)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "interface portproxy add v4tov4",
+          "comment": "Netsh portproxy port-forwarding (LOT Tunnels)"
+        }
+      ]
+    }
   },
   {
     "title": "LOLAD",
@@ -246,7 +654,20 @@
       "C2"
     ],
     "url": "https://lolc2.github.io/",
-    "description": "A collection of C2 frameworks that leverage legitimate services to evade detection."
+    "description": "A collection of C2 frameworks that leverage legitimate services to evade detection.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOLC2: Remote channel and exfiltration monitoring",
+      "rules": [
+        {
+          "field": "DestinationPort",
+          "condition": "is",
+          "value": "443",
+          "comment": "LOLC2 exfiltration channel"
+        }
+      ]
+    }
   },
   {
     "title": "LOLAPI",
@@ -265,7 +686,20 @@
       "exfiltration"
     ],
     "url": "https://lolexfil.github.io/",
-    "description": "A comprehensive catalog of data exfiltration methods with detection patterns, simulation examples, IOC artifacts, and ATT&amp;CK mappings."
+    "description": "A comprehensive catalog of data exfiltration methods with detection patterns, simulation examples, IOC artifacts, and ATT&amp;CK mappings.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOLEXFIL: Remote channel and exfiltration monitoring",
+      "rules": [
+        {
+          "field": "DestinationPort",
+          "condition": "is",
+          "value": "443",
+          "comment": "LOLEXFIL exfiltration channel"
+        }
+      ]
+    }
   },
   {
     "title": "LOLFSaaS",
@@ -276,7 +710,20 @@
       "exfiltration"
     ],
     "url": "https://lolfsaas.github.io/",
-    "description": "Living Off Free SaaS \u2014 a directory of free SaaS platforms used for C2, exfiltration, and adversary tooling, with ATT&amp;CK mappings and detection logic."
+    "description": "Living Off Free SaaS \u2014 a directory of free SaaS platforms used for C2, exfiltration, and adversary tooling, with ATT&amp;CK mappings and detection logic.",
+    "rule_template": {
+      "event": "NetworkConnect",
+      "action": "include",
+      "description": "LOLFSaaS: Remote channel and exfiltration monitoring",
+      "rules": [
+        {
+          "field": "DestinationPort",
+          "condition": "is",
+          "value": "443",
+          "comment": "LOLFSaaS exfiltration channel"
+        }
+      ]
+    }
   },
   {
     "title": "LOTE",
@@ -305,7 +752,20 @@
       "argument-injection"
     ],
     "url": "https://gtfoargs.github.io/",
-    "description": "A curated list of Unix binaries whose arguments can be exploited for argument injection \u2014 enabling shell escapes, privilege escalation, and arbitrary file read/write."
+    "description": "A curated list of Unix binaries whose arguments can be exploited for argument injection \u2014 enabling shell escapes, privilege escalation, and arbitrary file read/write.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "GTFOArgs: Process execution monitoring profile",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "gtfoargs",
+          "comment": "Living off the land activity for GTFOArgs"
+        }
+      ]
+    }
   },
   {
     "title": "LOLGlobs",
@@ -314,7 +774,26 @@
       "evasion"
     ],
     "url": "https://0xv1n.github.io/LOLGlobs/",
-    "description": "Process execution hidden behind wildcard and glob pattern evasion, catalogued across shells and platforms and mapped to ATT&amp;CK tactics."
+    "description": "Process execution hidden behind wildcard and glob pattern evasion, catalogued across shells and platforms and mapped to ATT&amp;CK tactics.",
+    "rule_template": {
+      "event": "ProcessCreate",
+      "action": "include",
+      "description": "LOLGlobs: Wildcard and pattern globbing evasion techniques in Windows CLI",
+      "rules": [
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "cmd /c *",
+          "comment": "Cmd globbing wildcard execution (LOLGlobs)"
+        },
+        {
+          "field": "CommandLine",
+          "condition": "contains",
+          "value": "powershell *?*",
+          "comment": "PowerShell wildcard obfuscation pattern"
+        }
+      ]
+    }
   },
   {
     "title": "LOLCreds",

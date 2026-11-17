@@ -148,8 +148,8 @@
     ],
     "categories": [
       "Execute",
-      "Copy",
       "ADS",
+      "Copy",
       "Download"
     ],
     "commands": [
@@ -209,15 +209,15 @@
       "C:\\Windows\\SysWOW64\\certutil.exe"
     ],
     "mitre_ids": [
+      "T1027.013",
       "T1564.004",
       "T1105",
-      "T1027.013",
       "T1140"
     ],
     "categories": [
       "Decode",
-      "Encode",
       "ADS",
+      "Encode",
       "Download"
     ],
     "commands": [
@@ -277,14 +277,14 @@
       "C:\\Windows\\SysWOW64\\cmd.exe"
     ],
     "mitre_ids": [
-      "T1048.003",
+      "T1059.003",
       "T1564.004",
       "T1105",
-      "T1059.003"
+      "T1048.003"
     ],
     "categories": [
-      "Upload",
       "ADS",
+      "Upload",
       "Download"
     ],
     "commands": [
@@ -396,8 +396,8 @@
       "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2008.9-0\\ConfigSecurityPolicy.exe"
     ],
     "mitre_ids": [
-      "T1567",
-      "T1105"
+      "T1105",
+      "T1567"
     ],
     "categories": [
       "Upload",
@@ -608,8 +608,8 @@
       "C:\\Windows\\SysWOW64\\diskshadow.exe"
     ],
     "mitre_ids": [
-      "T1202",
-      "T1003.003"
+      "T1003.003",
+      "T1202"
     ],
     "categories": [
       "Execute",
@@ -652,9 +652,9 @@
       "T1003.003"
     ],
     "categories": [
-      "Download",
+      "ADS",
       "Copy",
-      "ADS"
+      "Download"
     ],
     "commands": [
       "esentutl.exe /y {PATH_ABSOLUTE:.source.vbs} /d {PATH_ABSOLUTE:.dest.vbs} /o",
@@ -775,8 +775,8 @@
       "T1105"
     ],
     "categories": [
-      "Copy",
       "ADS",
+      "Copy",
       "Download"
     ],
     "commands": [
@@ -800,8 +800,8 @@
       "T1552.001"
     ],
     "categories": [
-      "Credentials",
       "ADS",
+      "Credentials",
       "Download"
     ],
     "commands": [
@@ -881,8 +881,8 @@
       "T1218"
     ],
     "categories": [
-      "Execute",
-      "Tamper"
+      "Tamper",
+      "Execute"
     ],
     "commands": [
       "fsutil.exe file setZeroData offset=0 length=9999999999 {PATH_ABSOLUTE}",
@@ -1182,8 +1182,8 @@
       "C:\\Windows\\SysWOW64\\mavinject.exe"
     ],
     "mitre_ids": [
-      "T1564.004",
-      "T1218.013"
+      "T1218.013",
+      "T1564.004"
     ],
     "categories": [
       "Execute",
@@ -1226,8 +1226,8 @@
       "T1218.014"
     ],
     "categories": [
-      "Execute",
       "UAC Bypass",
+      "Execute",
       "Download"
     ],
     "commands": [
@@ -1294,8 +1294,8 @@
       "C:\\Program Files (x86)\\MSBuild\\14.0\\bin\\MSBuild.exe"
     ],
     "mitre_ids": [
-      "T1036",
-      "T1127.001"
+      "T1127.001",
+      "T1036"
     ],
     "categories": [
       "Execute",
@@ -1379,8 +1379,8 @@
       "C:\\Windows\\SysWOW64\\mshta.exe"
     ],
     "mitre_ids": [
-      "T1218.005",
-      "T1105"
+      "T1105",
+      "T1218.005"
     ],
     "categories": [
       "Execute",
@@ -1637,8 +1637,8 @@
       "T1105"
     ],
     "categories": [
-      "Copy",
-      "ADS"
+      "ADS",
+      "Copy"
     ],
     "commands": [
       "print /D:{PATH_ABSOLUTE}:file.exe {PATH_ABSOLUTE:.exe}",
@@ -1745,8 +1745,8 @@
       "c:\\Windows\\SysWOW64\\rdrleakdiag.exe"
     ],
     "mitre_ids": [
-      "T1003.001",
-      "T1003"
+      "T1003",
+      "T1003.001"
     ],
     "categories": [
       "Dump"
@@ -1770,8 +1770,8 @@
       "T1003.002"
     ],
     "categories": [
-      "Credentials",
-      "ADS"
+      "ADS",
+      "Credentials"
     ],
     "commands": [
       "reg export HKLM\\SOFTWARE\\Microsoft\\Evilreg {PATH_ABSOLUTE}:evilreg.reg",
@@ -1967,8 +1967,8 @@
       "C:\\Windows\\SysWOW64\\rundll32.exe"
     ],
     "mitre_ids": [
-      "T1564.004",
-      "T1218.011"
+      "T1218.011",
+      "T1564.004"
     ],
     "categories": [
       "Execute",
@@ -2254,8 +2254,8 @@
       "T1105"
     ],
     "categories": [
-      "Copy",
-      "ADS"
+      "ADS",
+      "Copy"
     ],
     "commands": [
       "tar -cf {PATH}:ads {PATH_ABSOLUTE:folder}",
@@ -2291,8 +2291,8 @@
       "C:\\Windows\\SysWOW64\\tttracer.exe"
     ],
     "mitre_ids": [
-      "T1127",
-      "T1003"
+      "T1003",
+      "T1127"
     ],
     "categories": [
       "Execute",
@@ -2481,13 +2481,13 @@
     "mitre_ids": [
       "T1564.004",
       "T1105",
-      "T1218",
-      "T1518.001"
+      "T1518.001",
+      "T1218"
     ],
     "categories": [
       "Execute",
-      "Copy",
-      "ADS"
+      "ADS",
+      "Copy"
     ],
     "commands": [
       "wmic.exe process call create \"{PATH_ABSOLUTE}:program.exe\"",
@@ -3069,8 +3069,8 @@
       "C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86\\adplus.exe"
     ],
     "mitre_ids": [
-      "T1003.001",
-      "T1127"
+      "T1127",
+      "T1003.001"
     ],
     "categories": [
       "Execute",
@@ -3128,8 +3128,8 @@
       "C:\\Program Files\\Windows Kits\\10\\App Certification Kit\\appcert.exe"
     ],
     "mitre_ids": [
-      "T1127",
-      "T1218.007"
+      "T1218.007",
+      "T1127"
     ],
     "categories": [
       "Execute"
@@ -3233,8 +3233,8 @@
       "C:\\Program Files (x86)\\Microsoft Silverlight\\5.1.50918.0\\coregen.exe"
     ],
     "mitre_ids": [
-      "T1055",
-      "T1218"
+      "T1218",
+      "T1055"
     ],
     "categories": [
       "Execute",
@@ -3383,8 +3383,8 @@
       "C:\\Program Files\\dotnet\\dotnet.exe"
     ],
     "mitre_ids": [
-      "T1218",
-      "T1059"
+      "T1059",
+      "T1218"
     ],
     "categories": [
       "Execute",
@@ -3836,8 +3836,8 @@
       "no default"
     ],
     "mitre_ids": [
-      "T1220",
       "T1564",
+      "T1220",
       "T1105"
     ],
     "categories": [
@@ -4102,8 +4102,8 @@
       "C:\\Program Files\\Microsoft Power BI Desktop\\bin\\SqlDumper.exe"
     ],
     "mitre_ids": [
-      "T1003.001",
-      "T1003"
+      "T1003",
+      "T1003.001"
     ],
     "categories": [
       "Dump"
@@ -4256,8 +4256,8 @@
     ],
     "mitre_ids": [
       "T1547",
-      "T1218",
-      "T1070"
+      "T1070",
+      "T1218"
     ],
     "categories": [
       "Execute",
@@ -4371,8 +4371,8 @@
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\<version>\\Community\\Common7\\IDE\\VSLaunchBrowser.exe"
     ],
     "mitre_ids": [
-      "T1127",
-      "T1105"
+      "T1105",
+      "T1127"
     ],
     "categories": [
       "Execute",
@@ -4892,8 +4892,8 @@
       "C:\\Windows\\SysWOW64\\winrm.vbs"
     ],
     "mitre_ids": [
-      "T1216",
-      "T1220"
+      "T1220",
+      "T1216"
     ],
     "categories": [
       "Execute",

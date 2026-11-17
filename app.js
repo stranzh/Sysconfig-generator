@@ -35,6 +35,9 @@
     // LOLBAS Rules
     selectedLolbas: new Set(),
     
+    // lolol.farm Projects Rule Integrations
+    selectedLololProjects: new Set(["LOLDrivers", "HijackLibs", "FileSec", "Persistence Info", "lolcerts", "LOT Tunnels", "LOLRMM", "WADComs", "LOT Webhooks", "LOLApps", "WTFBins"]),
+
     // Software Inclusions / Exclusions
     softwareSelections: {},
 
@@ -251,6 +254,8 @@
       card.style.flexDirection = "column";
 
       const tags = (p.tags || []).map(t => `<span class="tag" style="background:#1e293b; color:#94a3b8;">${t}</span>`).join(" ");
+      const isConfigured = state.selectedLololProjects.has(p.title);
+      const hasTemplate = p.rule_template && p.rule_template.rules && p.rule_template.rules.length > 0;
 
       card.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
@@ -258,10 +263,43 @@
           <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); text-decoration:none; font-size:0.9rem;" title="Visit Research Page">↗</a>
         </div>
         <p style="font-size:0.84rem; color:var(--text-muted); flex:1; margin-bottom:12px;">${escapeHtml(p.description)}</p>
+        
+        ${hasTemplate ? `
+          <div style="background:#090d14; border:1px solid var(--border-color); border-radius:6px; padding:10px; margin-bottom:12px; font-size:0.78rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+              <span class="tag tag-include" style="font-size:0.7rem;">${p.rule_template.event} (${p.rule_template.rules.length} rules)</span>
+              <label class="switch" style="width:36px; height:20px;">
+                <input type="checkbox" data-lolol-title="${escapeHtml(p.title)}" ${isConfigured ? "checked" : ""}>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div style="color:var(--text-muted); font-size:0.75rem;">
+              ${escapeHtml(p.rule_template.description || "Active Monitoring Rules")}
+            </div>
+          </div>
+        ` : `
+          <div style="font-size:0.75rem; color:var(--text-dim); margin-bottom:12px;">
+            External reference index
+          </div>
+        `}
+
         <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:auto;">
           ${tags}
         </div>
       `;
+
+      const cb = card.querySelector("input[data-lolol-title]");
+      if (cb) {
+        cb.addEventListener("change", (e) => {
+          if (e.target.checked) {
+            state.selectedLololProjects.add(p.title);
+          } else {
+            state.selectedLololProjects.delete(p.title);
+          }
+          renderXmlPreview();
+        });
+      }
+
       lololGrid.appendChild(card);
     });
   }
@@ -664,7 +702,43 @@
       totalRulesGenerated += 3;
     }
 
-    // 7. Custom Rules Block
+    // 7. lolol.farm Research Projects Rule Group
+    const activeLololProjects = bundle.lolol_projects.filter(p => 
+      state.selectedLololProjects.has(p.title) && p.rule_template && p.rule_template.rules && p.rule_template.rules.length > 0
+    );
+
+    if (activeLololProjects.length > 0) {
+      xml += `\n\t\t<!-- ************************************************************* -->\n`;
+      xml += `\t\t<!-- LOLOL.FARM RESEARCH PROJECTS (LOLDrivers, HijackLibs, etc.)  -->\n`;
+      xml += `\t\t<!-- ************************************************************* -->\n`;
+
+      const groupedByEvent = {};
+      activeLololProjects.forEach(p => {
+        const ev = p.rule_template.event;
+        const act = p.rule_template.action || "include";
+        const key = `${ev}_${act}`;
+        if (!groupedByEvent[key]) groupedByEvent[key] = [];
+        groupedByEvent[key].push(p);
+      });
+
+      for (let k in groupedByEvent) {
+        const [ev, act] = k.split("_");
+        xml += `\t\t<RuleGroup name="LOLOL_Farm_${ev}" groupRelation="or">\n`;
+        xml += `\t\t\t<${ev} onmatch="${act}">\n`;
+        groupedByEvent[k].forEach(p => {
+          xml += `\t\t\t\t<!-- [${escapeHtml(p.title)}] ${escapeHtml(p.rule_template.description || '')} -->\n`;
+          p.rule_template.rules.forEach(r => {
+            totalRulesGenerated++;
+            if (r.comment) xml += `\t\t\t\t<!-- ${escapeHtml(r.comment)} -->\n`;
+            xml += `\t\t\t\t<${r.field} condition="${r.condition}">${escapeHtml(r.value)}</${r.field}>\n`;
+          });
+        });
+        xml += `\t\t\t</${ev}>\n`;
+        xml += `\t\t</RuleGroup>\n`;
+      }
+    }
+
+    // 8. Custom Rules Block
     if (state.customRules.length > 0) {
       xml += `\n\t\t<!-- ************************************************************* -->\n`;
       xml += `\t\t<!-- USER-DEFINED CUSTOM RULES                                   -->\n`;
