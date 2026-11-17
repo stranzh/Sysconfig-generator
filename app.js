@@ -825,7 +825,7 @@
     renderXmlPreview();
   });
 
-  // --- Helper escapeHtml ---
+  // --- Helper escapeHtml & escapeXmlComment ---
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -833,6 +833,10 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function escapeXmlComment(str) {
+    return escapeHtml(str).replace(/--/g, "-");
   }
 
   // --- Initial Render ---

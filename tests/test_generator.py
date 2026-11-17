@@ -62,5 +62,40 @@ class TestSysmonGenerator(unittest.TestCase):
         self.assertIn("running_processes", scan)
         self.assertIn("scanner_version", scan)
 
+    def test_lolol_projects_xml_generation(self):
+        from xml.sax.saxutils import escape
+
+        def escape_comment(text):
+            return escape(str(text)).replace("--", "-")
+
+        grouped = {}
+        for p in self.lolol:
+            rt = p.get("rule_template")
+            if rt and rt.get("rules"):
+                ev = rt["event"]
+                act = rt.get("action", "include")
+                grouped.setdefault(f"{ev}|{act}", []).append(p)
+
+        self.assertGreater(len(grouped), 0, "Expected lolol.farm projects with rule templates")
+
+        xml_parts = ['<Sysmon schemaversion="4.50">', '<EventFiltering>']
+        for key, projects in grouped.items():
+            ev, act = key.split("|")
+            xml_parts.append(f'<RuleGroup name="LOLOL_Farm_{ev}" groupRelation="or">')
+            xml_parts.append(f'<{ev} onmatch="{act}">')
+            for p in projects:
+                rt = p["rule_template"]
+                xml_parts.append(f'<!-- [{escape_comment(p["title"])}] {escape_comment(rt.get("description", ""))} -->')
+                for r in rt["rules"]:
+                    if r.get("comment"):
+                        xml_parts.append(f'<!-- {escape_comment(r["comment"])} -->')
+                    xml_parts.append(f'<{r["field"]} condition="{r["condition"]}">{escape(r["value"])}</{r["field"]}>')
+            xml_parts.append(f'</{ev}>')
+            xml_parts.append('</RuleGroup>')
+        xml_parts.extend(['</EventFiltering>', '</Sysmon>'])
+
+        root = ET.fromstring("\n".join(xml_parts))
+        self.assertEqual(root.tag, "Sysmon")
+
 if __name__ == "__main__":
     unittest.main()
