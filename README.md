@@ -88,6 +88,12 @@ Once satisfied with your configuration in the **XML Output** tab:
 
 ## 🛡️ License & Acknowledgments
 
-- Baseline modular structure inspired by [Olaf Hartong's sysmon-modular](https://github.com/olafhartong/sysmon-modular).
-- Attack techniques and binaries curated from [lolol.farm](https://lolol.farm/) and the [LOLBAS Project](https://lolbas-project.github.io/).
-- MIT License.
+### Open Source Licensing
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)** - see the [LICENSE](LICENSE) file for details. This license ensures full compatibility with bundled community dataset definitions.
+
+### Acknowledgments & Attributions
+- **sysmon-modular**: Configuration architecture and modular filtering patterns inspired by [Olaf Hartong's sysmon-modular](https://github.com/olafhartong/sysmon-modular) (Licensed under the MIT License).
+- **LOLBAS Project**: Living Off The Land Binaries, Scripts, and Libraries research curated from the [LOLBAS Project](https://lolbas-project.github.io/) (Licensed under GNU General Public License v3.0).
+- **lolol.farm**: Directory indexing and research classification sourced from [lolol.farm](https://lolol.farm/).
+- **MITRE ATT&CK®**: Technique taxonomy and IDs (e.g., T1059, T1218, T1105) are documented by The MITRE Corporation. *MITRE ATT&CK is a registered trademark of The MITRE Corporation.*
+
