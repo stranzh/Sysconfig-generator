@@ -775,6 +775,22 @@
       xml += `\t\t</RuleGroup>\n`;
     }
 
+    // 9. Olaf Hartong sysmon-modular Baseline Rules (Balanced Production)
+    if (bundle.sysmon_modular_rules) {
+      xml += `\n\t\t<!-- ************************************************************* -->\n`;
+      xml += `\t\t<!-- OLAF HARTONG SYSMON-MODULAR BASELINE (NO FILEDELETE)          -->\n`;
+      xml += `\t\t<!-- ************************************************************* -->\n`;
+      for (let eid in state.eventFilters) {
+        if (state.eventFilters[eid].enabled && bundle.sysmon_modular_rules[eid]) {
+          bundle.sysmon_modular_rules[eid].forEach(ruleFile => {
+            totalRulesGenerated++;
+            xml += `\t\t<!-- sysmon-modular: ${escapeXmlComment(ruleFile.name)} -->\n`;
+            xml += `${ruleFile.inner_xml}\n`;
+          });
+        }
+      }
+    }
+
     // Close configuration
     xml += `\t</EventFiltering>\n`;
     xml += `</Sysmon>\n`;
