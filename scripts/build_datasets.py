@@ -61,12 +61,15 @@ try:
         software = json.load(f)
     with open("src/data/sysmon_modular_manifest.json") as f:
         modular = json.load(f)
+    with open("src/data/vulnerable_drivers.json") as f:
+        vuln_drivers = json.load(f)
     
     bundle_data = {
         "lolol_projects": lolol_projects,
         "lolbas": parsed_lolbas,
         "software_catalog": software,
         "sysmon_modular_manifest": modular,
+        "vulnerable_drivers": vuln_drivers,
         "build_timestamp": "auto-generated"
     }
     with open("src/data_bundle.js", "w") as f:

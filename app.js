@@ -638,6 +638,16 @@
       xml += `\n\t\t<!-- ************************************************************* -->\n`;
       xml += `\t\t<!-- SYSMON EVENT 6: DRIVER LOADED INTO KERNEL                    -->\n`;
       xml += `\t\t<!-- ************************************************************* -->\n`;
+      if (bundle.vulnerable_drivers && bundle.vulnerable_drivers.length > 0) {
+        xml += `\t\t<RuleGroup name="Microsoft_Known_Vulnerable_And_Bad_Drivers" groupRelation="or">\n`;
+        xml += `\t\t\t<DriverLoad onmatch="include">\n`;
+        bundle.vulnerable_drivers.forEach(d => {
+          totalRulesGenerated++;
+          xml += `\t\t\t\t<ImageLoaded condition="end with">\\${escapeHtml(d.filename)}</ImageLoaded>\n`;
+        });
+        xml += `\t\t\t</DriverLoad>\n`;
+        xml += `\t\t</RuleGroup>\n`;
+      }
       xml += `\t\t<RuleGroup name="Driver_Monitoring" groupRelation="or">\n`;
       xml += `\t\t\t<DriverLoad onmatch="exclude">\n`;
       xml += `\t\t\t\t<Signature condition="contains">Microsoft</Signature>\n`;

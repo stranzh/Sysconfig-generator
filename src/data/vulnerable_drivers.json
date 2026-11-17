@@ -1,0 +1,2598 @@
+[
+  {
+    "filename": "1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "1109.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "1fc7aeeff3ab19004d2e53eae8160ab1.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "360fsflt_win10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "360hvm64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "360netmon_wfp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "4.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "4118b86e490aed091b1a219dba45f332.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "4748696211bd56c2d93c21cab91e82a5.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "5a4fe297c7d42539303137b6d75b150d.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "6771b13a53b9c7449d4891e427735ea2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "6c8a.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "7.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "80.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "81.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "834761775.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "8492937_2_driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "_xyzxbqvb.rdu_gfac_sys_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "a236e7d654cd932b7d11cb604629a2d0.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "a26363e7b02b13f2b8d697abb90cd5c3.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "a9df5964635ef8bd567ae487c3d214c4.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "accellid.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ace-base.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "acpix86.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "adrmdrvsys.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "adv64drv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "advcare.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "afd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "agent64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "aida64driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "air_system10.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "alinubx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "alsysio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amd_rpmc_biostoolcommondriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amdpowerprofiler.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amdryzenmasterdriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amdtools64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amifldrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amigendrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "amp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ampa.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ampg.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "amsdk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "aoddriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "appshopdrv103.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "appvkgr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ardrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "argusmonitor.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asas.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asio32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "AsIO64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asmio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asmmap64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrautochkupddrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrautochkupddrv_1_0_32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrcddrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv101.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv102.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv103.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv104.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv106.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrdrv107.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asribdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asromgdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrrapidstartdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrsetupdrv103.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asrsmartconnectdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "astra64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asupio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "asussaio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "aswarpot.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "aswvmm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "athpexnt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atidsmxx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atillk64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atlaccess.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atomicredteamcapcom.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atoolskrnl64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "atszio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "avalueio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "avkiller.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "b.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "b1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "b3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "b4.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bandai.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bdapiutil.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bdapiutil64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "be6318413160e589080df02bb3ca6e6a.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "bedaisy.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bin_intigua_driver64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "biontdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "biostoolcommondriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "black.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "blackbone.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "blackbonedrv10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "blacklotus_driver.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "bootrepair.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_def.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_def64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_flash64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_hwmio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_hwmio64_w10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_i2c64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_i2cio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_led64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_rcio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_rcio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_rciow1064.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bs_rvsio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bsitf.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bsmem64_w10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bsmemx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bsmi.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bsmix64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "btfilter.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "burntcigar.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "bw.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bwrs.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "bwrsh.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "c.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "c94f405c5929cfcccc8ad00b42c95083.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "capcom.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "capcom2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cardio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ccekrnl.dat",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ccprotect.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cg6kwin2k.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "chaos-rootkit.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "chinese_cheat_driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "citmdrv_amd64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "citmdrv_ia64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cmupx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cndom6.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "computerz.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "controlcenter.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cormem.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "corsairllaccess64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cp2x72c.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cpqsysio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cpupress.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cpuz.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cpuz141.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cpuz_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "csagent.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "csc.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ctiio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cupfixerx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "cyvrlpc.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "d.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "d2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "d3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "d39duiy9sxtdsiu4lsvs.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "d4.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "d591004.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "daxin_blank.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank1.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank3.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank4.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank5.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "daxin_blank6.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "dbk64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dbutil.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dbutil_2_3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dbutildrv2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dcprotect.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dcr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dcrcvdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dddriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dddriver64dcsa.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dellbios.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dellinstrumentation.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "deresute64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "devhost.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "devmemdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dh_kernel.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dh_kernel_10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "directio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "directio32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "directio32_legacy.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "directio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ditpio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dkrtk.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "dndrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dpmemio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "driver7-x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "driver7-x86-withoutdbg.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "driver7-x86.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "driver_090d409f.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_099ef491.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_0a636606.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_0ffb4081.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_146b8f4f.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_1a74c2bd.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_1afc1d06.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_206006a1.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_290bc782.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_312c83a9.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_4d8bc539.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_4f9b5a2f.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_4fc254af.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_5c308aed.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_5d61e4ea.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_668c5bea.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_77225a99.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_82d928c5.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_85ca0dcd.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_930da474.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_981d03e1.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_a6deeea6.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_ab811ca5.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_b4f33ffe.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_bfcbc010.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_c3d48ddd.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_d1ea9e16.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_d9f15d91.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_e1123b59.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_ef9d653a.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_fdd16a94.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "driver_win10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "driverscloud_amd64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dsark64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dtr_ec.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "dxiw8ez9ayxqyzgm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "e29f6311ae87542b3d693c1f38e4e3ad.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "e939448b28a4edc81f1f974cebf6e7d2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "echo_driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ecsiodriverx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ef0e1725aaf0c6c972593f860531a2ea.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "eio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "elbycdio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "elrawdsk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ene.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "eneio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "energydriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "enetechio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "enportv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "etdsupp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "evga_kernel_driver-x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "f.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "fairplaykd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fastdumpx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fbiosdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fd3b7234419fafc9bdd533f48896ed73_b816c5cd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fdmcjhjyxziti.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fekern.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fgme.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "fh-ethercat_dio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fiddrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fiddrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fidpcidrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fidpcidrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fildds.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "filnk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "filwfp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fjfwupgd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fortimon3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "foxkedriver64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fpcie2com.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "full.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "fur.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "gamedriverx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gameink.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gametersafe.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gedevdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gftkyj64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ggprotect64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gibepext.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "giveio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "glckio2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "globalvistaventures_v3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gmer64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "goad.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gofly64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gpcidrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gpu-z.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gtckmdfbs.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "gvcidrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hardwaremon-x86.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hax.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "heysafe_drv.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "hlpdrv.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "hostnt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hp64vision.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hp_swtools_driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hpportiox64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hw.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwauidoos2ec.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwdetectng.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwinfo32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwinfo64i.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwos2ec10x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwos2ec7x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "hwrwdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "idmtdi.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "immunetutildriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "inetcache.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "inpout32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "inpoutx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ioaccess.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iobios64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iobitunlocker.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iocdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iodrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iomanager.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iomap64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iomem64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ipctype.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iqvw64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iqvw64e.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "irec.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iscflashx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "isodrivep64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "iuforcedelete.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "jnprva.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "jokercontroller.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "k7rkscan.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kapchelper_x64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "kbdcap64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kdhacker64_ev.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kdriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kernel_utility_driver64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "kevp64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kexplore.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kfeco10x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kfeco11x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kgameprotect.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "khwmon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kinkajou.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kkyum.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kmwpsms.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kobjexp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kprocesshacker.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kregexp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ksapi.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ksld.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "kt2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ktapi.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ktes.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ktgn.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ktmutil7odm.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "l1malwarebits.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lallamon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lctka.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "lecomax64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lenovodiagnosticsdriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lgcoretemp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lgdatacatcher.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lgdcatcher.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lha.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "libnicm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "libwasys.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lmiinfo.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lnvmsrio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lsigetwin_sliffdriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lurker.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "lv561av.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "magdrvamd64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "malicious.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mapmom.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mbamchameleon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "memctl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "memloadercustomize.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mhyprot2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mhyprot3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mhyprotect.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mhyprotnap.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mhyprotrpg.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mimidrv.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mimikatz.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mjj0ge.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mlgbbiicaihflrnh.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "mnemosyne.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "monitor_win10_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "monprocesscontrol.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "monprocessex.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "msio32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "msio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "msqpq.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "msr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "msrhook.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mst.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mtcbsv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mtxc9cb.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mtxmem.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "my.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "mydrivers.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "myportio_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nbiolib_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nchgbios2x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ncpl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ndislan.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "neacsafe64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "netfilter.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "netfilter2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "netfilterdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "netflt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "netproxydriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "networklocker_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ngiodriver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ngstar.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ni.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nicm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nipalk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nlslexicons0024uvn.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "nodedriver.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "novawave_novabench_novabenchdriverwin10.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "npr0.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nqrmq.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "nscm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nseckrnl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nstr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nstrwsk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nt2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nt3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nt4.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nt5.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nt6.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ntbios.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ntbios_2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ntiolib.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ntiolib_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nvaudio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nvflash.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nvflsh32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nvflsh64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nvoclock.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "nxeng.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "oatoolx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ollama.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "openlibsys.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "otipcibus.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "p2kghmzsary1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "panio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "paniox64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "panmonflt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "panmonfltx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pcdsrvc_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pchunter.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pciecubed.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "pctcore64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pdfwkrnl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pgpwded.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pgrhostcontrol.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phlashnt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phydmaccx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phydmaccx86.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phymem64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phymem_ext64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "phymemx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "physmem.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "piddrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "piddrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "plugplayservice.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "pmad.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pmxdrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "poisonx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "poortry.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "poortry1.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "poortry2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "portwell.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ppa_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "probmon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "processctr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "procexp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "procexp152.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "procobsrvesx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "prokiller64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "protects.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "proxy32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "proxy64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "proxydrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pskd64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pskmad.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pskmad_64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "psmounterex.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pstrip64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pwdrvio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pxitrig64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "pxscan.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "qiomem.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "qu829.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "radhwmgr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rcflctrl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "realtime driver.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "reddriver.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "rksafe.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "rootlaser.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rspot.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtcore64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtcoremini64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtif.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtkio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtkiow8x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtport.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtsper.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtstpx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtsuer.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rtsupx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rwdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "rzdev_00x10.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "rzpnk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sakdriver.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "sandra.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sbiosio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sdrv_win_sliff.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "se64a.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "seasunprotect.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "segwindrvx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "semav6msr.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sense5ext.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "sepdrv3_1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sfdrvx32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sfdrvx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "shield.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "shimano32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "signeddrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sioctl.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sivx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "skill.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "smarteio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "smep_capcom.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "smep_namco.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "smserl64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "snxpsamd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sonixddrx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sparkio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "speedfan.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "spf.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "spwizimgvt.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "srswdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "ssport.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "stdcdrv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "stdcdrvws64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "stprocessmonitor.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "superbmc.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "svioctrlx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sxav64-v1.5.1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysconp.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysdiag.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysdrv3s.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysfile_x64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysinfo.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysinfodetectorx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "sysinfox64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "szkg64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "t.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "t3.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "t7.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "t8.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tboflhelper.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tbt_force_power_control_access64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tcio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tdeio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tdevflt.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "tdklib64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "telephonuafy.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "termdd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "testbone.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tfbfs3ped.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tfsysmon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tgsafe.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "thelper.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "throttlestop.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "titidrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tm_filter.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tmcomm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tmel.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tmnciesc.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tosrfec.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tpwsav.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "trixx.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "truesight.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tsdrvx64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "tvicport64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "typelibde.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "ucorew64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "uddb2b6.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxguest.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxmousent.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxtap.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxusb.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vboxusbmon.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vdbsv64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vdk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "viraglt64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "viragt.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "viragt64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "virtio_rng.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "viverraudio.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vmdrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vproeventmonitor.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vsapint.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "vsdatant.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wamsdk.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wantd.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wantd_2.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wantd_3.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wantd_4.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wantd_5.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wantd_6.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "watabe.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wcpu.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wdisvhost.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wdtkernel.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wfshbr64.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "whql.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wibukey64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windbg.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "windivert.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "windows-memory-informer.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windows-xp-64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windows7-32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windows8-10-32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windows_cpu_temperature_component.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "windrvr1251.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winflash64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio32.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio32a.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio32b.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio64a.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio64b.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winio64c.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winiodrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "winring0.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wintapix.sys",
+    "category": "malicious"
+  },
+  {
+    "filename": "wirwadrv.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wiseunlo.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wnbios.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wsdkd.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wsftprm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "wyproxy64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "xhunter1.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "xhunter2.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "xjokercontroller.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "xkpsm.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "xlha.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "yyprotect64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "zam64.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "zntport.sys",
+    "category": "vulnerable driver"
+  },
+  {
+    "filename": "zyarkit.sys",
+    "category": "vulnerable driver"
+  }
+]
